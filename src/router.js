@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+
+import Algorithm from './views/Algorithm.vue'
+import Benefits from './views/Benefits.vue'
+import Explain from './views/Explain.vue'
+import History from './views/History.vue'
+import OpenData from './views/OpenData.vue'
+import Roadmap from './views/Roadmap.vue'
+import Routing from './views/Routing.vue'
 
 Vue.use(Router)
 
@@ -9,9 +16,43 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: "/",
+      redirect: "/route",
+    },
+    {
+      path: "/route",
+      name: "Routing",
+      component: Routing,
+    },
+    {
+      path: "/explain",
+      name: "Explain",
+      component: Explain,
+    },
+    {
+      path: "/details/history",
+      name: "History",
+      component: History,
+    },
+    {
+      path: "/details/algorithm",
+      name: "Algorithm",
+      component: Algorithm,
+    },
+    {
+      path: "/details/open-data",
+      name: "OpenData",
+      component: OpenData,
+    },
+    {
+      path: "/details/roadmap",
+      name: "Roadmap",
+      component: Roadmap,
+    },
+    {
+      path: "/details/benefits",
+      name: "Benefits",
+      component: Benefits,
     },
     {
       path: '/about',
