@@ -3,16 +3,16 @@
   <v-container>
     <v-form v-model="valid">
       <v-row>
-        <v-col cols="12" md="3">
+        <v-col cols="12" md="6">
           <station-input v-model="searchParams.startStation" placeholder="Start:"/>
         </v-col>
-        <v-col cols="12" md="3">
+        <v-col cols="12" md="6">
           <station-input v-model="searchParams.destionationStation" placeholder="Ziel:"/>
         </v-col>
-        <v-col cols="12" md="3">
+        <v-col cols="12" md="6">
           <date-input v-model="searchParams.selectedDate" placeholder="Datum:"/>
         </v-col>
-         <v-col cols="12" md="3">
+         <v-col cols="12" md="6">
           <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:"/>
         </v-col>
       </v-row>
