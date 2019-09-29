@@ -12,7 +12,7 @@
           <v-expansion-panels>
 
             <v-expansion-panel>
-              <v-expansion-panel-header class="title">Website mobiltauglich machen</v-expansion-panel-header>
+              <v-expansion-panel-header class="title" color="red">Website mobiltauglich machen</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
                   Die aktuelle Website wurde mit Vue.js und material-vue umgesetzt. Damit ist es prinzipiell möglich, Websites responsive - und somit mobiltauglich - zu machen. Dafür müssen aber noch diverse Details angepasst werden. Auch wenn später native Apps folgen sollen, ist eine mobiltaugliche Website ein naheliegender Schritt: mit wenig zusätzlichem Aufwand wird eine Lösung geschaffen, mit der auch Interessierte Dystonse unterwegs testen können, für die eine Installation eine Hemmschwelle darstellt.
