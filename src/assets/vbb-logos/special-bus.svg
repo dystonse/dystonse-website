@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+	<title>Signet AusflugsBus</title>
+	<desc>© VBB http://www.vbb.de/de/article/ueber-uns/media-service/produktsignets/3306.html</desc>
+
+	<g id="special-bus" fill-rule="evenodd">
+		<path d="M100 50c0-27.66-22.34-50-50-50S0 22.34 0 50s22.34 50 50 50 50-22.34 50-50" fill="#922A7D"/>
+		<path d="M8.92 78.24h15.72l10.21-11.56h27.82l.14 11.56h18.56l-4.1-54.16H60.31L8.8 78.06l.11.18zm34.9-21.8L61.28 36.6l.24-.37.53 20.2H43.82z" fill="#fff"/>
+	</g>
+</svg>

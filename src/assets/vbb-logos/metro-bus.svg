@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+	<title>Signet MetroBus</title>
+	<desc>https://commons.wikimedia.org/wiki/File:MetroBus.svg</desc>
+
+	<g id="metro-bus" stroke="#fff">
+		<path d="M123.82 668.51c0 17.96-13.16 32.52-29.4 32.52-16.25 0-29.42-14.56-29.41-32.52C65 650.56 78.17 636 94.4 636c16.25 0 29.42 14.56 29.41 32.51z" transform="matrix(1.69201 0 0 1.53087 -109.75 -973.42)" fill="#f47920" stroke-width=".3"/>
+		<path d="M15.09 78.43l12.82-58.6h17.21l2.2 40.29 20.51-40.3h16.85L73.33 79.18l-11.36-.37 7.7-43.96-20.89 44.33h-9.15l-4.4-43.6-8.79 43.23-11.35-.37z" fill="#fff" stroke-width=".92"/>
+	</g>
+</svg>

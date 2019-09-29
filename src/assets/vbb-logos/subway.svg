@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+	<title>Signet U-Bahn</title>
+	<desc>© VBB http://www.vbb.de/de/article/ueber-uns/media-service/produktsignets/3306.html</desc>
+
+	<g id="subway" fill-rule="evenodd">
+		<path fill="#00629E" d="M.29 99.49h99.46V.02H.29z"/>
+		<path d="M83.51 61.74c0 22.55-18.48 30.8-33.6 30.8-15.21 0-33.39-8.25-33.39-30.8V7.88h19.6V59.8c0 9.49 3.38 16.22 13.8 16.22 10.3 0 13.68-6.73 13.68-16.22V7.88h19.9v53.86z" fill="#fff"/>
+	</g>
+</svg>

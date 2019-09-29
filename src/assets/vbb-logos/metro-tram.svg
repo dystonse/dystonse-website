@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+	<title>Signet MetroTram</title>
+	<desc>https://commons.wikimedia.org/wiki/File:MetroTram.svg</desc>
+
+	<g id="metro-tram" fill-rule="evenodd">
+		<path fill="#f47920" fill-rule="nonzero" d="M0 0h99.99v99.99h-100z"/>
+		<path d="M13.46 79.62l13.46-61.54H45l2.3 42.3 21.55-42.3h17.69l-11.92 62.3L62.69 80l8.08-46.15-21.92 46.53h-9.62l-4.61-45.76L25.38 80l-11.92-.38z" fill="#fff" stroke-width=".6" stroke="#fff"/>
+	</g>
+</svg>
