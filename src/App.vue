@@ -8,12 +8,12 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-layout>
         <v-row align="center">
-          <v-column>
+          <v-col>
             <v-img :src="require('./assets/logo-sw.png')" contain height="48" width="128"></v-img>
-          </v-column>
-          <v-column>
+          </v-col>
+          <v-col>
             <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
-          </v-column>
+          </v-col>
         </v-row>
       </v-layout>
       <div class="flex-grow-1"></div>

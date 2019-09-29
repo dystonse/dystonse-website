@@ -1,0 +1,4340 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.435747,
+          52.510001
+        ]
+      },
+      "properties": {
+        "name": "Ostbahnhof",
+        "id": "900000120005",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.432208,
+          52.518025
+        ]
+      },
+      "properties": {
+        "name": "Strausberger Platz",
+        "id": "900000120006",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.410405,
+          52.528191
+        ]
+      },
+      "properties": {
+        "name": "Rosa-Luxemburg-Platz",
+        "id": "900000100016",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.401393,
+          52.529781
+        ]
+      },
+      "properties": {
+        "name": "Rosenthaler Platz",
+        "id": "900000100023",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.368924,
+          52.525847
+        ]
+      },
+      "properties": {
+        "name": "Berlin Hauptbahnhof",
+        "id": "900000003201",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.349534,
+          52.542202
+        ]
+      },
+      "properties": {
+        "name": "Amrumer Str.",
+        "id": "900000009101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.359395,
+          52.546493
+        ]
+      },
+      "properties": {
+        "name": "Leopoldplatz",
+        "id": "900000009102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.332707,
+          52.506921
+        ]
+      },
+      "properties": {
+        "name": "Zoologischer Garten Bhf",
+        "id": "900000023201",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.331419,
+          52.503763
+        ]
+      },
+      "properties": {
+        "name": "Kurfürstendamm",
+        "id": "900000023203",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.326233,
+          52.502742
+        ]
+      },
+      "properties": {
+        "name": "Uhlandstr.",
+        "id": "900000023301",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.307348,
+          52.500086
+        ]
+      },
+      "properties": {
+        "name": "Adenauerplatz",
+        "id": "900000023302",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.293661,
+          52.536985
+        ]
+      },
+      "properties": {
+        "name": "Jakob-Kaiser-Platz",
+        "id": "900000018101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.305715,
+          52.525978
+        ]
+      },
+      "properties": {
+        "name": "Mierendorffplatz",
+        "id": "900000019204",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.307221,
+          52.517154
+        ]
+      },
+      "properties": {
+        "name": "Richard-Wagner-Platz",
+        "id": "900000022202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.228667,
+          52.625148
+        ]
+      },
+      "properties": {
+        "name": "Heiligensee",
+        "id": "900000091203",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.24563,
+          52.613513
+        ]
+      },
+      "properties": {
+        "name": "Schulzendorf",
+        "id": "900000091205",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.179099,
+          52.421457
+        ]
+      },
+      "properties": {
+        "name": "Wannsee Bhf",
+        "id": "900000053301",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.197477,
+          52.534798
+        ]
+      },
+      "properties": {
+        "name": "Spandau Bhf",
+        "id": "900000029101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.387153,
+          52.52027
+        ]
+      },
+      "properties": {
+        "name": "Friedrichstr. Bhf",
+        "id": "900000100001",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.411267,
+          52.521512
+        ]
+      },
+      "properties": {
+        "name": "Alexanderplatz Bhf",
+        "id": "900000100003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.469093,
+          52.502851
+        ]
+      },
+      "properties": {
+        "name": "Ostkreuz Bhf",
+        "id": "900000120003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.498228,
+          52.510754
+        ]
+      },
+      "properties": {
+        "name": "Lichtenberg Bhf",
+        "id": "900000160004",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.388372,
+          52.548637
+        ]
+      },
+      "properties": {
+        "name": "Gesundbrunnen Bhf",
+        "id": "900000007102",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.300135,
+          52.530431
+        ]
+      },
+      "properties": {
+        "name": "Jungfernheide Bhf",
+        "id": "900000020201",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.303843,
+          52.504805
+        ]
+      },
+      "properties": {
+        "name": "Charlottenburg Bhf",
+        "id": "900000024101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.376454,
+          52.50934
+        ]
+      },
+      "properties": {
+        "name": "Potsdamer Platz Bhf",
+        "id": "900000100020",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.365579,
+          52.475468
+        ]
+      },
+      "properties": {
+        "name": "Südkreuz Bhf",
+        "id": "900000058101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.328078,
+          52.429098
+        ]
+      },
+      "properties": {
+        "name": "Lichterfelde Ost Bhf",
+        "id": "900000064301",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.199891,
+          52.535798
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Spandau",
+        "id": "900000029302",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.193298,
+          52.43121
+        ]
+      },
+      "properties": {
+        "name": "Nikolassee",
+        "id": "900000052201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.24036,
+          52.442615
+        ]
+      },
+      "properties": {
+        "name": "Krumme Lanke",
+        "id": "900000050201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.23206,
+          52.437166
+        ]
+      },
+      "properties": {
+        "name": "Mexikoplatz",
+        "id": "900000050301",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.259227,
+          52.431209
+        ]
+      },
+      "properties": {
+        "name": "Zehlendorf",
+        "id": "900000049201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.381937,
+          52.516511
+        ]
+      },
+      "properties": {
+        "name": "Brandenburger Tor",
+        "id": "900000100025",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.309276,
+          52.467342
+        ]
+      },
+      "properties": {
+        "name": "Breitenbachplatz",
+        "id": "900000051202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.320545,
+          52.486478
+        ]
+      },
+      "properties": {
+        "name": "Blissestr.",
+        "id": "900000041102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.314519,
+          52.490201
+        ]
+      },
+      "properties": {
+        "name": "Fehrbelliner Platz",
+        "id": "900000041101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.310084,
+          52.493567
+        ]
+      },
+      "properties": {
+        "name": "Konstanzer Str.",
+        "id": "900000041201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.290011,
+          52.457695
+        ]
+      },
+      "properties": {
+        "name": "Dahlem-Dorf",
+        "id": "900000051303",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.434807,
+          52.481146
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Neukölln",
+        "id": "900000078102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.425782,
+          52.479745
+        ]
+      },
+      "properties": {
+        "name": "Boddinstr.",
+        "id": "900000079202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.387799,
+          52.485669
+        ]
+      },
+      "properties": {
+        "name": "Platz der Luftbrücke",
+        "id": "900000017102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.360775,
+          52.486263
+        ]
+      },
+      "properties": {
+        "name": "Julius-Leber-Brücke",
+        "id": "900000057104",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.331355,
+          52.487047
+        ]
+      },
+      "properties": {
+        "name": "Berliner Str.",
+        "id": "900000044201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.290151,
+          52.496698
+        ]
+      },
+      "properties": {
+        "name": "Halensee",
+        "id": "900000040101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.283036,
+          52.501152
+        ]
+      },
+      "properties": {
+        "name": "Westkreuz",
+        "id": "900000024102",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.272977,
+          52.509798
+        ]
+      },
+      "properties": {
+        "name": "Berlin, Theodor-Heuss-Platz",
+        "id": "900000026201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.25991,
+          52.516409
+        ]
+      },
+      "properties": {
+        "name": "Neu-Westend",
+        "id": "900000026101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.352848,
+          52.479811
+        ]
+      },
+      "properties": {
+        "name": "Schöneberg",
+        "id": "900000054104",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.360917,
+          52.490845
+        ]
+      },
+      "properties": {
+        "name": "Kleistpark",
+        "id": "900000054102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.362456,
+          52.497627
+        ]
+      },
+      "properties": {
+        "name": "Bülowstr.",
+        "id": "900000056104",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.353825,
+          52.499644
+        ]
+      },
+      "properties": {
+        "name": "Nollendorfplatz",
+        "id": "900000056102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.342165,
+          52.518111
+        ]
+      },
+      "properties": {
+        "name": "Hansaplatz",
+        "id": "900000003101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.328703,
+          52.534314
+        ]
+      },
+      "properties": {
+        "name": "Beusselstr.",
+        "id": "900000020202",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.351969,
+          52.55047
+        ]
+      },
+      "properties": {
+        "name": "Seestr.",
+        "id": "900000009103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.362857,
+          52.499778
+        ]
+      },
+      "properties": {
+        "name": "Kurfürstenstr.",
+        "id": "900000005201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.281651,
+          52.451
+        ]
+      },
+      "properties": {
+        "name": "Freie Universität (Thielplatz)",
+        "id": "900000051201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.261944,
+          52.48868
+        ]
+      },
+      "properties": {
+        "name": "Grunewald",
+        "id": "900000048101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.313865,
+          52.418373
+        ]
+      },
+      "properties": {
+        "name": "Osdorfer Str.",
+        "id": "900000064256",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.300714,
+          52.488337
+        ]
+      },
+      "properties": {
+        "name": "Hohenzollerndamm",
+        "id": "900000044101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.254016,
+          52.450146
+        ]
+      },
+      "properties": {
+        "name": "Onkel Toms Hütte",
+        "id": "900000050282",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.388798,
+          52.531672
+        ]
+      },
+      "properties": {
+        "name": "Nordbahnhof",
+        "id": "900000007104",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.412154,
+          52.541022
+        ]
+      },
+      "properties": {
+        "name": "Eberswalder Str.",
+        "id": "900000110006",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.370393,
+          52.539895
+        ]
+      },
+      "properties": {
+        "name": "Reinickendorfer Str.",
+        "id": "900000008102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.36606,
+          52.542732
+        ]
+      },
+      "properties": {
+        "name": "Wedding",
+        "id": "900000009104",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.347532,
+          52.574534
+        ]
+      },
+      "properties": {
+        "name": "Paracelsus-Bad",
+        "id": "900000085104",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.363284,
+          52.581588
+        ]
+      },
+      "properties": {
+        "name": "Wilhelmsruh",
+        "id": "900000084101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.360635,
+          52.570843
+        ]
+      },
+      "properties": {
+        "name": "Residenzstr.",
+        "id": "900000085203",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.327328,
+          52.563483
+        ]
+      },
+      "properties": {
+        "name": "Kurt-Schumacher-Platz",
+        "id": "900000086102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.333502,
+          52.560862
+        ]
+      },
+      "properties": {
+        "name": "Afrikanische Str.",
+        "id": "900000011102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.26287,
+          52.536904
+        ]
+      },
+      "properties": {
+        "name": "Rohrdamm",
+        "id": "900000036101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.273323,
+          52.537026
+        ]
+      },
+      "properties": {
+        "name": "Siemensdamm",
+        "id": "900000035101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.286578,
+          52.536703
+        ]
+      },
+      "properties": {
+        "name": "Halemweg",
+        "id": "900000018102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.289564,
+          52.632958
+        ]
+      },
+      "properties": {
+        "name": "Frohnau",
+        "id": "900000092201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.373279,
+          52.557107
+        ]
+      },
+      "properties": {
+        "name": "Osloer Str.",
+        "id": "900000009202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.364283,
+          52.563854
+        ]
+      },
+      "properties": {
+        "name": "Franz-Neumann-Platz",
+        "id": "900000085202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.20913,
+          52.532505
+        ]
+      },
+      "properties": {
+        "name": "Stresow",
+        "id": "900000030202",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.241902,
+          52.525587
+        ]
+      },
+      "properties": {
+        "name": "Ruhleben",
+        "id": "900000025202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.232309,
+          52.538718
+        ]
+      },
+      "properties": {
+        "name": "Haselhorst",
+        "id": "900000034102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.295083,
+          52.576252
+        ]
+      },
+      "properties": {
+        "name": "Holzhauser Str.",
+        "id": "900000088201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.290122,
+          52.582139
+        ]
+      },
+      "properties": {
+        "name": "Borsigwerke",
+        "id": "900000088202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.205874,
+          52.637867
+        ]
+      },
+      "properties": {
+        "name": "Hennigsdorf",
+        "id": "900000200000",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.248593,
+          52.538098
+        ]
+      },
+      "properties": {
+        "name": "Paulsternstr.",
+        "id": "900000034101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.283043,
+          52.506454
+        ]
+      },
+      "properties": {
+        "name": "Messe Nord/ICC",
+        "id": "900000024106",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.281695,
+          52.509985
+        ]
+      },
+      "properties": {
+        "name": "Kaiserdamm",
+        "id": "900000026202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.406531,
+          52.498274
+        ]
+      },
+      "properties": {
+        "name": "Prinzenstr.",
+        "id": "900000013103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.395382,
+          52.491252
+        ]
+      },
+      "properties": {
+        "name": "Gneisenaustr.",
+        "id": "900000016101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.38814,
+          52.493567
+        ]
+      },
+      "properties": {
+        "name": "Mehringdamm",
+        "id": "900000017101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385796,
+          52.46593
+        ]
+      },
+      "properties": {
+        "name": "Alt-Tempelhof",
+        "id": "900000068202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385754,
+          52.470694
+        ]
+      },
+      "properties": {
+        "name": "Tempelhof",
+        "id": "900000068201",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.389208,
+          52.51477
+        ]
+      },
+      "properties": {
+        "name": "Französische Str.",
+        "id": "900000100027",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.408767,
+          52.512007
+        ]
+      },
+      "properties": {
+        "name": "Märkisches Museum",
+        "id": "900000100014",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.442972,
+          52.591069
+        ]
+      },
+      "properties": {
+        "name": "Blankenburg",
+        "id": "900000142001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.380242,
+          52.571901
+        ]
+      },
+      "properties": {
+        "name": "Schönholz",
+        "id": "900000085201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.492452,
+          52.636614
+        ]
+      },
+      "properties": {
+        "name": "Buch",
+        "id": "900000135001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.548392,
+          52.550749
+        ]
+      },
+      "properties": {
+        "name": "Raoul-Wallenberg-Str.",
+        "id": "900000170002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.513698,
+          52.566549
+        ]
+      },
+      "properties": {
+        "name": "Hohenschönhausen Bhf",
+        "id": "900000152001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.412279,
+          52.567281
+        ]
+      },
+      "properties": {
+        "name": "Pankow",
+        "id": "900000130002",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.427419,
+          52.544802
+        ]
+      },
+      "properties": {
+        "name": "Prenzlauer Allee",
+        "id": "900000110002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.455944,
+          52.528772
+        ]
+      },
+      "properties": {
+        "name": "Landsberger Allee",
+        "id": "900000110004",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.464884,
+          52.524195
+        ]
+      },
+      "properties": {
+        "name": "Storkower Str.",
+        "id": "900000110012",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4753,
+          52.513613
+        ]
+      },
+      "properties": {
+        "name": "Frankfurter Allee",
+        "id": "900000120001",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.536904,
+          52.525806
+        ]
+      },
+      "properties": {
+        "name": "Springpfuhl",
+        "id": "900000171003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.559602,
+          52.407791
+        ]
+      },
+      "properties": {
+        "name": "Altglienicke",
+        "id": "900000195510",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.721004,
+          52.438571
+        ]
+      },
+      "properties": {
+        "name": "Wilhelmshagen",
+        "id": "900000183002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.691655,
+          52.451371
+        ]
+      },
+      "properties": {
+        "name": "Rahnsdorf",
+        "id": "900000183001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.496527,
+          52.415714
+        ]
+      },
+      "properties": {
+        "name": "Rudow",
+        "id": "900000083201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.540553,
+          52.435102
+        ]
+      },
+      "properties": {
+        "name": "Adlershof",
+        "id": "900000193002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.513522,
+          52.390792
+        ]
+      },
+      "properties": {
+        "name": "Flughafen Berlin-Schönefeld Bhf",
+        "id": "900000260005",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.579543,
+          52.458692
+        ]
+      },
+      "properties": {
+        "name": "Köpenick",
+        "id": "900000180001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.562701,
+          52.445938
+        ]
+      },
+      "properties": {
+        "name": "Spindlersfeld",
+        "id": "900000180003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.441791,
+          52.501147
+        ]
+      },
+      "properties": {
+        "name": "Schlesisches Tor",
+        "id": "900000014102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.416169,
+          52.510858
+        ]
+      },
+      "properties": {
+        "name": "Heinrich-Heine-Str.",
+        "id": "900000100008",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.474029,
+          52.478722
+        ]
+      },
+      "properties": {
+        "name": "Plänterwald",
+        "id": "900000191002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.489505,
+          52.467581
+        ]
+      },
+      "properties": {
+        "name": "Baumschulenweg",
+        "id": "900000191001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.448976,
+          52.452743
+        ]
+      },
+      "properties": {
+        "name": "Blaschkoallee",
+        "id": "900000080201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.356028,
+          52.459239
+        ]
+      },
+      "properties": {
+        "name": "Priesterweg",
+        "id": "900000058102",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.444828,
+          52.463516
+        ]
+      },
+      "properties": {
+        "name": "Grenzallee",
+        "id": "900000080202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.455986,
+          52.473843
+        ]
+      },
+      "properties": {
+        "name": "Sonnenallee",
+        "id": "900000077106",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.453851,
+          52.429253
+        ]
+      },
+      "properties": {
+        "name": "Johannisthaler Chaussee",
+        "id": "900000082202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.389457,
+          52.398563
+        ]
+      },
+      "properties": {
+        "name": "Schichauweg",
+        "id": "900000074202",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.605794,
+          52.535946
+        ]
+      },
+      "properties": {
+        "name": "Hellersdorf",
+        "id": "900000175007",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.402358,
+          52.522607
+        ]
+      },
+      "properties": {
+        "name": "Hackescher Markt",
+        "id": "900000100002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.34276,
+          52.439034
+        ]
+      },
+      "properties": {
+        "name": "Lankwitz",
+        "id": "900000067221",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.447668,
+          52.437076
+        ]
+      },
+      "properties": {
+        "name": "Britz-Süd",
+        "id": "900000080402",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.332412,
+          52.463578
+        ]
+      },
+      "properties": {
+        "name": "Feuerbachstr.",
+        "id": "900000063101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.328409,
+          52.464998
+        ]
+      },
+      "properties": {
+        "name": "Walther-Schreiber-Platz",
+        "id": "900000061101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.361177,
+          52.447298
+        ]
+      },
+      "properties": {
+        "name": "Attilastr.",
+        "id": "900000068301",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.384905,
+          52.460512
+        ]
+      },
+      "properties": {
+        "name": "Kaiserin-Augusta-Str.",
+        "id": "900000068302",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.324836,
+          52.461183
+        ]
+      },
+      "properties": {
+        "name": "Schloßstr.",
+        "id": "900000062203",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.328676,
+          52.471439
+        ]
+      },
+      "properties": {
+        "name": "Friedrich-Wilhelm-Platz",
+        "id": "900000061102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.314387,
+          52.472462
+        ]
+      },
+      "properties": {
+        "name": "Rüdesheimer Platz",
+        "id": "900000045101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.342875,
+          52.4781
+        ]
+      },
+      "properties": {
+        "name": "Innsbrucker Platz",
+        "id": "900000054105",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.306041,
+          52.447552
+        ]
+      },
+      "properties": {
+        "name": "Botanischer Garten",
+        "id": "900000066102",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.553527,
+          52.469058
+        ]
+      },
+      "properties": {
+        "name": "Wuhlheide",
+        "id": "900000180002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.574536,
+          52.512724
+        ]
+      },
+      "properties": {
+        "name": "Wuhletal",
+        "id": "900000175001",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.588763,
+          52.521436
+        ]
+      },
+      "properties": {
+        "name": "Kaulsdorf-Nord",
+        "id": "900000175004",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.555035,
+          52.513059
+        ]
+      },
+      "properties": {
+        "name": "Biesdorf",
+        "id": "900000171001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.520043,
+          52.513747
+        ]
+      },
+      "properties": {
+        "name": "Friedrichsfelde Ost",
+        "id": "900000171002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.541524,
+          52.543272
+        ]
+      },
+      "properties": {
+        "name": "Marzahn",
+        "id": "900000170001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.513544,
+          52.505464
+        ]
+      },
+      "properties": {
+        "name": "Friedrichsfelde",
+        "id": "900000161512",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.478699,
+          52.501213
+        ]
+      },
+      "properties": {
+        "name": "Rummelsburg",
+        "id": "900000160001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.484297,
+          52.503444
+        ]
+      },
+      "properties": {
+        "name": "Nöldnerplatz",
+        "id": "900000160003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.619707,
+          52.539135
+        ]
+      },
+      "properties": {
+        "name": "Louis-Lewin-Str.",
+        "id": "900000175015",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.596894,
+          52.533963
+        ]
+      },
+      "properties": {
+        "name": "Cottbusser Platz",
+        "id": "900000175006",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.566118,
+          52.571564
+        ]
+      },
+      "properties": {
+        "name": "Ahrensfelde Bhf",
+        "id": "900000170004",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.554392,
+          52.557816
+        ]
+      },
+      "properties": {
+        "name": "Mehrower Allee",
+        "id": "900000170003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.58903,
+          52.512122
+        ]
+      },
+      "properties": {
+        "name": "Kaulsdorf",
+        "id": "900000175002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.383798,
+          52.511519
+        ]
+      },
+      "properties": {
+        "name": "Mohrenstr.",
+        "id": "900000100010",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.402352,
+          52.511301
+        ]
+      },
+      "properties": {
+        "name": "Spittelmarkt",
+        "id": "900000100013",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.330613,
+          52.496582
+        ]
+      },
+      "properties": {
+        "name": "Spichernstr.",
+        "id": "900000042101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.454085,
+          52.515772
+        ]
+      },
+      "properties": {
+        "name": "Frankfurter Tor",
+        "id": "900000120008",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.258514,
+          52.508273
+        ]
+      },
+      "properties": {
+        "name": "Heerstr.",
+        "id": "900000026105",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.311524,
+          52.567111
+        ]
+      },
+      "properties": {
+        "name": "Scharnweberstr.",
+        "id": "900000087101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.315583,
+          52.577545
+        ]
+      },
+      "properties": {
+        "name": "Eichborndamm",
+        "id": "900000096405",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.320549,
+          52.606814
+        ]
+      },
+      "properties": {
+        "name": "Waidmannslust",
+        "id": "900000094101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.489439,
+          52.512214
+        ]
+      },
+      "properties": {
+        "name": "Magdalenenstr.",
+        "id": "900000160005",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.322581,
+          52.511582
+        ]
+      },
+      "properties": {
+        "name": "Ernst-Reuter-Platz",
+        "id": "900000023101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.467529,
+          52.469168
+        ]
+      },
+      "properties": {
+        "name": "Köllnische Heide",
+        "id": "900000077155",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.431704,
+          52.467181
+        ]
+      },
+      "properties": {
+        "name": "Hermannstr.",
+        "id": "900000079221",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.393157,
+          52.54193
+        ]
+      },
+      "properties": {
+        "name": "Voltastr.",
+        "id": "900000007103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.396231,
+          52.537994
+        ]
+      },
+      "properties": {
+        "name": "Bernauer Str.",
+        "id": "900000007110",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.37873,
+          52.544738
+        ]
+      },
+      "properties": {
+        "name": "Humboldthain",
+        "id": "900000008101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.367365,
+          52.551524
+        ]
+      },
+      "properties": {
+        "name": "Nauener Platz",
+        "id": "900000009201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.449159,
+          52.505765
+        ]
+      },
+      "properties": {
+        "name": "Warschauer Str.",
+        "id": "900000120004",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.418027,
+          52.5155
+        ]
+      },
+      "properties": {
+        "name": "Jannowitzbrücke",
+        "id": "900000100004",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.39176,
+          52.497774
+        ]
+      },
+      "properties": {
+        "name": "Hallesches Tor",
+        "id": "900000012103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.329149,
+          52.477366
+        ]
+      },
+      "properties": {
+        "name": "Bundesplatz",
+        "id": "900000044202",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.311843,
+          52.479446
+        ]
+      },
+      "properties": {
+        "name": "Heidelberger Platz",
+        "id": "900000045102",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.324051,
+          52.493833
+        ]
+      },
+      "properties": {
+        "name": "Hohenzollernplatz",
+        "id": "900000043101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.41377,
+          52.559517
+        ]
+      },
+      "properties": {
+        "name": "Vinetastr.",
+        "id": "900000130011",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.39315,
+          52.564974
+        ]
+      },
+      "properties": {
+        "name": "Wollankstr.",
+        "id": "900000130003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.504238,
+          52.573266
+        ]
+      },
+      "properties": {
+        "name": "Wartenberg",
+        "id": "900000151001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.523626,
+          52.497236
+        ]
+      },
+      "properties": {
+        "name": "Tierpark",
+        "id": "900000161002",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.525981,
+          52.481038
+        ]
+      },
+      "properties": {
+        "name": "Karlshorst",
+        "id": "900000162001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.382689,
+          52.410919
+        ]
+      },
+      "properties": {
+        "name": "Buckower Chaussee",
+        "id": "900000072101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385561,
+          52.445801
+        ]
+      },
+      "properties": {
+        "name": "Westphalweg",
+        "id": "900000070101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.354077,
+          52.448899
+        ]
+      },
+      "properties": {
+        "name": "Südende",
+        "id": "900000063452",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.375022,
+          52.423816
+        ]
+      },
+      "properties": {
+        "name": "Marienfelde",
+        "id": "900000073101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.536008,
+          52.534751
+        ]
+      },
+      "properties": {
+        "name": "Poelchaustr.",
+        "id": "900000170005",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.525653,
+          52.555736
+        ]
+      },
+      "properties": {
+        "name": "Gehrenseestr.",
+        "id": "900000152002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.297463,
+          52.51097
+        ]
+      },
+      "properties": {
+        "name": "Sophie-Charlotte-Platz",
+        "id": "900000022101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.339047,
+          52.575394
+        ]
+      },
+      "properties": {
+        "name": "Lindauer Allee",
+        "id": "900000086160",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.306804,
+          52.618165
+        ]
+      },
+      "properties": {
+        "name": "Hermsdorf",
+        "id": "900000093201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.443278,
+          52.516848
+        ]
+      },
+      "properties": {
+        "name": "Weberwiese",
+        "id": "900000120025",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.27045,
+          52.498771
+        ]
+      },
+      "properties": {
+        "name": "Messe Süd",
+        "id": "900000025423",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.470081,
+          52.615755
+        ]
+      },
+      "properties": {
+        "name": "Karow Bhf",
+        "id": "900000143001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.484371,
+          52.423032
+        ]
+      },
+      "properties": {
+        "name": "Zwickauer Damm",
+        "id": "900000083101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.463109,
+          52.424645
+        ]
+      },
+      "properties": {
+        "name": "Lipschitzallee",
+        "id": "900000082201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.634541,
+          52.538105
+        ]
+      },
+      "properties": {
+        "name": "Hönow",
+        "id": "900000175010",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.397841,
+          52.554763
+        ]
+      },
+      "properties": {
+        "name": "Bornholmer Str.",
+        "id": "900000110011",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.42909,
+          52.577603
+        ]
+      },
+      "properties": {
+        "name": "Pankow-Heinersdorf",
+        "id": "900000130001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.393068,
+          52.525161
+        ]
+      },
+      "properties": {
+        "name": "Oranienburger Str.",
+        "id": "900000100007",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.415138,
+          52.549336
+        ]
+      },
+      "properties": {
+        "name": "Schönhauser Allee",
+        "id": "900000110001",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.438356,
+          52.540724
+        ]
+      },
+      "properties": {
+        "name": "Greifswalder Str.",
+        "id": "900000110003",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.625462,
+          52.45709
+        ]
+      },
+      "properties": {
+        "name": "Friedrichshagen",
+        "id": "900000182002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.372226,
+          52.492323
+        ]
+      },
+      "properties": {
+        "name": "Yorckstr. S2 S25 S26 U7",
+        "id": "900000058103",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.367986,
+          52.492345
+        ]
+      },
+      "properties": {
+        "name": "Yorckstr. S1 U7",
+        "id": "900000057102",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.342561,
+          52.502109
+        ]
+      },
+      "properties": {
+        "name": "Wittenbergplatz",
+        "id": "900000056101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.405305,
+          52.525376
+        ]
+      },
+      "properties": {
+        "name": "Weinmeisterstr.",
+        "id": "900000100051",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.332921,
+          52.578169
+        ]
+      },
+      "properties": {
+        "name": "Karl-Bonhoeffer-Nervenklinik",
+        "id": "900000096458",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.381837,
+          52.552255
+        ]
+      },
+      "properties": {
+        "name": "Pankstr.",
+        "id": "900000009203",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.428468,
+          52.499035
+        ]
+      },
+      "properties": {
+        "name": "Görlitzer Bahnhof",
+        "id": "900000014101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.410947,
+          52.503739
+        ]
+      },
+      "properties": {
+        "name": "Moritzplatz",
+        "id": "900000013101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.390863,
+          52.506673
+        ]
+      },
+      "properties": {
+        "name": "Kochstr./Checkpoint Charlie",
+        "id": "900000012102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.382077,
+          52.504538
+        ]
+      },
+      "properties": {
+        "name": "Anhalter Bahnhof",
+        "id": "900000012101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.374719,
+          52.503806
+        ]
+      },
+      "properties": {
+        "name": "Mendelssohn-Bartholdy-Park",
+        "id": "900000005252",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.284237,
+          52.51861
+        ]
+      },
+      "properties": {
+        "name": "Westend",
+        "id": "900000026207",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.449967,
+          52.445299
+        ]
+      },
+      "properties": {
+        "name": "Parchimer Allee",
+        "id": "900000080401",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.383256,
+          52.498944
+        ]
+      },
+      "properties": {
+        "name": "Möckernbrücke",
+        "id": "900000017104",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.417748,
+          52.499047
+        ]
+      },
+      "properties": {
+        "name": "Kottbusser Tor",
+        "id": "900000013102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.412625,
+          52.532622
+        ]
+      },
+      "properties": {
+        "name": "Senefelderplatz",
+        "id": "900000110005",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.30942,
+          52.511827
+        ]
+      },
+      "properties": {
+        "name": "Deutsche Oper",
+        "id": "900000022201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.305335,
+          52.511543
+        ]
+      },
+      "properties": {
+        "name": "Bismarckstr.",
+        "id": "900000024201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.465347,
+          52.514662
+        ]
+      },
+      "properties": {
+        "name": "Samariterstr.",
+        "id": "900000120009",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.421895,
+          52.520316
+        ]
+      },
+      "properties": {
+        "name": "Schillingstr.",
+        "id": "900000100017",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.384771,
+          52.45345
+        ]
+      },
+      "properties": {
+        "name": "Ullsteinstr.",
+        "id": "900000069271",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.386725,
+          52.478142
+        ]
+      },
+      "properties": {
+        "name": "Paradestr.",
+        "id": "900000068101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.389719,
+          52.511495
+        ]
+      },
+      "properties": {
+        "name": "Stadtmitte",
+        "id": "900000100011",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.382415,
+          52.531254
+        ]
+      },
+      "properties": {
+        "name": "Naturkundemuseum",
+        "id": "900000100009",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.377033,
+          52.535397
+        ]
+      },
+      "properties": {
+        "name": "Schwartzkopffstr.",
+        "id": "900000100501",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341013,
+          52.55667
+        ]
+      },
+      "properties": {
+        "name": "Rehberge",
+        "id": "900000011101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.439805,
+          52.476429
+        ]
+      },
+      "properties": {
+        "name": "Karl-Marx-Str.",
+        "id": "900000078103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.407685,
+          52.489219
+        ]
+      },
+      "properties": {
+        "name": "Südstern",
+        "id": "900000016202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.350284,
+          52.489477
+        ]
+      },
+      "properties": {
+        "name": "Eisenacher Str.",
+        "id": "900000054103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.340237,
+          52.488654
+        ]
+      },
+      "properties": {
+        "name": "Bayerischer Platz",
+        "id": "900000055102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.217625,
+          52.537522
+        ]
+      },
+      "properties": {
+        "name": "Zitadelle",
+        "id": "900000033101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.206763,
+          52.539161
+        ]
+      },
+      "properties": {
+        "name": "Altstadt Spandau",
+        "id": "900000029301",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.422241,
+          52.493179
+        ]
+      },
+      "properties": {
+        "name": "Schönleinstr.",
+        "id": "900000016201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4284,
+          52.472874
+        ]
+      },
+      "properties": {
+        "name": "Leinestr.",
+        "id": "900000079201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.33121,
+          52.491992
+        ]
+      },
+      "properties": {
+        "name": "Güntzelstr.",
+        "id": "900000043201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.336241,
+          52.513959
+        ]
+      },
+      "properties": {
+        "name": "Tiergarten",
+        "id": "900000003103",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341417,
+          52.532229
+        ]
+      },
+      "properties": {
+        "name": "Birkenstr.",
+        "id": "900000002201",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.343837,
+          52.536183
+        ]
+      },
+      "properties": {
+        "name": "Westhafen",
+        "id": "900000001201",
+        "products": "SU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.374293,
+          52.499587
+        ]
+      },
+      "properties": {
+        "name": "Gleisdreieck",
+        "id": "900000017103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2505,
+          52.517048
+        ]
+      },
+      "properties": {
+        "name": "Olympia-Stadion",
+        "id": "900000025203",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.389711,
+          52.512169
+        ]
+      },
+      "properties": {
+        "name": "Berlin, Stadtmitte U2",
+        "id": "900000100701",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.395346,
+          52.513361
+        ]
+      },
+      "properties": {
+        "name": "Hausvogteiplatz",
+        "id": "900000100012",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.412455,
+          52.517229
+        ]
+      },
+      "properties": {
+        "name": "Klosterstr.",
+        "id": "900000100015",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.413598,
+          52.522078
+        ]
+      },
+      "properties": {
+        "name": "Alexanderplatz [U2]",
+        "id": "900000100703",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.336771,
+          52.500557
+        ]
+      },
+      "properties": {
+        "name": "Augsburger Str.",
+        "id": "900000023202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.26891,
+          52.450419
+        ]
+      },
+      "properties": {
+        "name": "Oskar-Helene-Heim",
+        "id": "900000051301",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.295203,
+          52.464172
+        ]
+      },
+      "properties": {
+        "name": "Podbielskiallee",
+        "id": "900000051302",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341989,
+          52.483332
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Schöneberg",
+        "id": "900000054101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.343264,
+          52.496169
+        ]
+      },
+      "properties": {
+        "name": "Viktoria-Luise-Platz",
+        "id": "900000055101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.413111,
+          52.521607
+        ]
+      },
+      "properties": {
+        "name": "Alexanderplatz [U5]",
+        "id": "900000100704",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.498495,
+          52.511135
+        ]
+      },
+      "properties": {
+        "name": "Lichtenberg [U5]",
+        "id": "900000160701",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.547326,
+          52.499517
+        ]
+      },
+      "properties": {
+        "name": "Biesdorf-Süd",
+        "id": "900000171005",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.560762,
+          52.504643
+        ]
+      },
+      "properties": {
+        "name": "Elsterwerdaer Platz",
+        "id": "900000171006",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.59055,
+          52.52849
+        ]
+      },
+      "properties": {
+        "name": "Kienberg (Gärten der Welt)",
+        "id": "900000175005",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.373454,
+          52.519908
+        ]
+      },
+      "properties": {
+        "name": "Bundestag",
+        "id": "900000003254",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.387456,
+          52.439641
+        ]
+      },
+      "properties": {
+        "name": "Alt-Mariendorf",
+        "id": "900000070301",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.387587,
+          52.525163
+        ]
+      },
+      "properties": {
+        "name": "Oranienburger Tor",
+        "id": "900000100019",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.303074,
+          52.571122
+        ]
+      },
+      "properties": {
+        "name": "Otisstr.",
+        "id": "900000086101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.283821,
+          52.589649
+        ]
+      },
+      "properties": {
+        "name": "Alt-Tegel",
+        "id": "900000089301",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.441909,
+          52.468764
+        ]
+      },
+      "properties": {
+        "name": "Neukölln [U7]",
+        "id": "900000078272",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.42472,
+          52.486957
+        ]
+      },
+      "properties": {
+        "name": "Hermannplatz",
+        "id": "900000078101",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.370429,
+          52.492766
+        ]
+      },
+      "properties": {
+        "name": "Yorckstr.",
+        "id": "900000057103",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.306774,
+          52.506415
+        ]
+      },
+      "properties": {
+        "name": "Wilmersdorfer Str.",
+        "id": "900000024202",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.47482,
+          52.423152
+        ]
+      },
+      "properties": {
+        "name": "Wutzkyallee",
+        "id": "900000083102",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.412125,
+          52.521619
+        ]
+      },
+      "properties": {
+        "name": "Alexanderplatz [U8]",
+        "id": "900000100705",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.325568,
+          52.588218
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Reinickendorf",
+        "id": "900000096410",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.334648,
+          52.595665
+        ]
+      },
+      "properties": {
+        "name": "Wittenau [U8]",
+        "id": "900000096197",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.319986,
+          52.456438
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Steglitz [U9]",
+        "id": "900000062781",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341417,
+          52.525938
+        ]
+      },
+      "properties": {
+        "name": "Turmstr.",
+        "id": "900000003104",
+        "products": "U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.273501,
+          52.436187
+        ]
+      },
+      "properties": {
+        "name": "Sundgauer Str.",
+        "id": "900000049202",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.335481,
+          52.596392
+        ]
+      },
+      "properties": {
+        "name": "Wittenau",
+        "id": "900000096101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.340598,
+          52.470002
+        ]
+      },
+      "properties": {
+        "name": "Friedenau",
+        "id": "900000060101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.322152,
+          52.455066
+        ]
+      },
+      "properties": {
+        "name": "Rathaus Steglitz",
+        "id": "900000062202",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.294141,
+          52.443512
+        ]
+      },
+      "properties": {
+        "name": "Lichterfelde West",
+        "id": "900000066101",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.213986,
+          52.439806
+        ]
+      },
+      "properties": {
+        "name": "Schlachtensee",
+        "id": "900000050355",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.396234,
+          52.387676
+        ]
+      },
+      "properties": {
+        "name": "Lichtenrade",
+        "id": "900000074201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.288695,
+          52.588805
+        ]
+      },
+      "properties": {
+        "name": "Tegel",
+        "id": "900000089303",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.349747,
+          52.577969
+        ]
+      },
+      "properties": {
+        "name": "Alt-Reinickendorf",
+        "id": "900000085105",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.308662,
+          52.409956
+        ]
+      },
+      "properties": {
+        "name": "Lichterfelde Süd",
+        "id": "900000064201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.319003,
+          52.505223
+        ]
+      },
+      "properties": {
+        "name": "Savignyplatz",
+        "id": "900000024203",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.347098,
+          52.519951
+        ]
+      },
+      "properties": {
+        "name": "Bellevue",
+        "id": "900000003102",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.497509,
+          52.493957
+        ]
+      },
+      "properties": {
+        "name": "Betriebsbahnhof Rummelsburg",
+        "id": "900000160002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.60148,
+          52.457903
+        ]
+      },
+      "properties": {
+        "name": "Hirschgarten",
+        "id": "900000182001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.227196,
+          52.510264
+        ]
+      },
+      "properties": {
+        "name": "Pichelsberg",
+        "id": "900000025424",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.241111,
+          52.511135
+        ]
+      },
+      "properties": {
+        "name": "Olympiastadion",
+        "id": "900000025321",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.460887,
+          52.493022
+        ]
+      },
+      "properties": {
+        "name": "Treptower Park",
+        "id": "900000190001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.443692,
+          52.469282
+        ]
+      },
+      "properties": {
+        "name": "Neukölln",
+        "id": "900000078201",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.510149,
+          52.454611
+        ]
+      },
+      "properties": {
+        "name": "Schöneweide Bhf",
+        "id": "900000192001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.524028,
+          52.446695
+        ]
+      },
+      "properties": {
+        "name": "Betriebsbahnhof Schöneweide",
+        "id": "900000193001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.543222,
+          52.399539
+        ]
+      },
+      "properties": {
+        "name": "Grünbergallee",
+        "id": "900000196001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.574018,
+          52.412714
+        ]
+      },
+      "properties": {
+        "name": "Grünau",
+        "id": "900000186001",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.538461,
+          52.452269
+        ]
+      },
+      "properties": {
+        "name": "Oberspree",
+        "id": "900000192002",
+        "products": "S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.61123,
+          52.512118
+        ]
+      },
+      "properties": {
+        "name": "Mahlsdorf Bhf",
+        "id": "900000176001",
+        "products": "S"
+      }
+    }
+  ]
+}
