@@ -6,7 +6,16 @@
 
     <v-app-bar color="primary" clipped-left app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+      <v-layout>
+        <v-row align="center">
+          <v-column>
+            <v-img :src="require('./assets/logo-sw.png')" contain height="48" width="128"></v-img>
+          </v-column>
+          <v-column>
+            <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+          </v-column>
+        </v-row>
+      </v-layout>
       <div class="flex-grow-1"></div>
 
       <v-dialog v-if="this.$router.currentRoute.name == 'Routing'" v-model="dialog" max-width="600px" color="primary">
