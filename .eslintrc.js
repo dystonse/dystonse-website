@@ -18,6 +18,7 @@ module.exports = {
     'semi': 'off',
     'es-beautifier/multiline-array-elements': 'off',
     'comma-dangle': 'off',
+    'space-before-function-paren': 'off',
   },
   parserOptions: {
     parser: 'babel-eslint'

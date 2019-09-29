@@ -6,7 +6,11 @@
 
     <v-app-bar color="primary" clipped-left app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Dystonse</v-toolbar-title>
+      <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+
+      <template v-if="this.$router.currentRoute.name == 'Routing'" #extension>
+        <SearchDialog/>
+      </template>
     </v-app-bar>
 
     <v-content>
@@ -20,15 +24,17 @@
 
 <script>
 import Navigation from "./components/Navigation";
+import SearchDialog from "./components/SearchDialog";
 
 export default {
   name: "App",
   components: {
     Navigation,
+    SearchDialog,
   },
   data: () => ({
     drawer: null,
-  })
+  }),
 };
 </script>
 <style lang="scss">
