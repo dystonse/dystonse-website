@@ -4,16 +4,16 @@
 
     <v-row align="center">
       <v-col cols="12" md="3">
-        <station-input v-model="searchParams.startStation" placeholder="Start:" />
+        <station-input :value="$store.state.currentSearch.startStation" route-end="start" placeholder="Start:" />
       </v-col>
       <v-col cols="12" md="3">
-        <station-input v-model="searchParams.destionationStation" placeholder="Ziel:" />
+        <station-input v-model="$store.state.currentSearch.destinationStation" route-end="destination" placeholder="Ziel:" />
       </v-col>
       <v-col cols="12" md="2">
-        <date-input v-model="searchParams.selectedDate" placeholder="Datum:" />
+        <date-input v-model="$store.state.currentSearch.date" placeholder="Datum:" />
       </v-col>
       <v-col cols="12" md="2">
-        <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:" />
+        <time-input v-model="$store.state.currentSearch.time" placeholder="Abfahrtszeit:" />
       </v-col>
       <v-col cols="12" md="2">
         <v-btn @click="$store.commit('increment');">Suche starten</v-btn>

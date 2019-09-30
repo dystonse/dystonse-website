@@ -56,35 +56,16 @@
 import stationPhotos from "vbb-station-photos";
 import Mapbox from "mapbox-gl";
 import ProductImage from "../components/ProductImage";
-import {
-  MglMap,
-  MglNavigationControl,
-  MglMarker
-} from "vue-mapbox";
+import { mapState } from "vuex";
+import util from "util";
+
+
+import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
 
 // Geojson from http://sharemap.org/ilisad/Berlin_U-bahn_future_development#!webgl contains unbuilt tracks
 
 function addStations(map) {
   var data = require("../assets/geo/stations.json");
-
-  /* var image = require('../assets/vbb-logos/suburban.svg');
-  map.addImage('cat', image);
-
-  var geoJsonStationLayer = {
-    id: "stations",
-    type: "symbol",
-    layout: {
-      "text-field": "name",
-      "text-optional": true,
-      "icon-image": "station-u"
-    },
-    paint: {},
-    source: {
-      type: "geojson",
-      data: data
-    }
-  }; */
-
   var geoJsonStationLayer = {
     id: "stations",
     type: "circle",
@@ -165,6 +146,26 @@ function addStations(map) {
   map.addLayer(geoJsonStationNamesLayer);
 }
 
+function addRoutingLayer(map) {
+  var geoJsonRoutingLayer = {
+    id: "routing",
+    type: "circle",
+    paint: {
+      "circle-radius": 20,
+      "circle-color": "#FF0000"
+    },
+    source: "routingMapSource"
+  };
+
+  // Add an empty source. This will be replaces each time something changes.
+  map.addSource("routingMapSource", {
+    type: "geojson",
+    data: { type: "FeatureCollection", features: [] }
+  });
+
+  map.addLayer(geoJsonRoutingLayer);
+}
+
 function addLines(map, name) {
   var data = require("../assets/geo/" + name + "-lines.json");
 
@@ -233,25 +234,46 @@ export default {
       snackbar: false
     };
   },
-
+  // We use computed data as a workaround to watch for changes in nested state
+  computed: {
+    ...mapState({
+      startStation: state => state.currentSearch.startStation,
+      destinationStation: state => state.currentSearch.destinationStation,
+    })
+  },
+  watch: {
+    startStation: function(station) {
+      this.rebuildRoutingLayer();
+    },
+    destinationStation: function(station) {
+      this.rebuildRoutingLayer();
+    }
+  },
   created() {
     // We need to set mapbox-gl library here in order to use it in template
     this.mapbox = Mapbox;
+    this.mapInstance = null; // important: don't store the map instance inside reactive data/state, it will break
   },
   methods: {
     showSnackbar: function(text) {
       this.snackbarText = text;
       this.snackbar = true;
     },
-    setStart: function() {},
-    setDestination: function() {},
+    setStart: function() {
+      this.$store.dispatch("setStartStation", this.station.id);
+    },
+    setDestination: function() {
+      this.$store.dispatch("setDestinationStation", this.station.id);
+    },
     mapLoaded: function({ map, component }) {
       let that = this;
+
       that.mapCanvas = map.getCanvasContainer();
 
       addLines(map, "suburban");
       addLines(map, "subway");
       addStations(map);
+      addRoutingLayer(map);
 
       const productColors = {
         S: "#00AB62",
@@ -289,6 +311,46 @@ export default {
           that.buttonColor = productColors[feature.properties.products];
           that.photoUrl = getPhotoFor(feature.properties.id);
           // that.cardVisible = true;
+        }
+      });
+
+      this.mapInstance = map;
+    },
+    rebuildRoutingLayer: function() {
+      console.log("Change is on the rise!");
+      var features = [];
+
+      this.addStationRole(
+        features,
+        this.$store.state.currentSearch.startStation,
+        "start"
+      );
+      this.addStationRole(
+        features,
+        this.$store.state.currentSearch.destinationStation,
+        "destination"
+      );
+      
+      this.mapInstance.getSource("routingMapSource").setData({ type: "FeatureCollection", features: features });
+    },
+    addStationRole: function(features, station, role) {
+      console.log("Add as " + role + ": " + util.inspect(station));
+
+      if (station == null || station.location == null) {
+        return;
+      }
+
+      features.push({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [station.location.longitude, station.location.latitude]
+        },
+        properties: {
+          name: station.name,
+          id: station.id,
+          products: station.product,
+          role: role
         }
       });
     }
