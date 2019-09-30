@@ -73,7 +73,6 @@ import Mapbox from "mapbox-gl";
 import ProductImage from "../components/ProductImage";
 import { mapState } from "vuex";
 import util from "util";
-
 import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
 
 var additionalRouteFeatures = [];
@@ -366,7 +365,6 @@ export default {
         this.$store.state.currentSearch.destinationStation,
         "destination"
       );
-
       if (f1) {
         features.push(f1);
       }
@@ -380,14 +378,12 @@ export default {
       this.mapInstance
         .getSource("routingMapSource")
         .setData({ type: "FeatureCollection", features: features });
-    },
     createStationFeature: function(station, role) {
       console.log("Add as " + role + ": " + util.inspect(station));
 
       if (station == null || station.location == null) {
         return null;
       }
-
       return {
         type: "Feature",
         geometry: {
