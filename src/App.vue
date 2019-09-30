@@ -6,7 +6,7 @@
 
     <v-app-bar color="primary" clipped-left app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+      <v-toolbar-title>{{ this.$router.currentRoute.name }} - Count: {{ this.$store.state.count }}</v-toolbar-title>
       <div class="flex-grow-1"></div>
       <template v-if="this.$router.currentRoute.name == 'Routing'">
         <SearchForm v-if="$vuetify.breakpoint.mdAndUp" />
@@ -38,8 +38,8 @@ export default {
   },
   data: () => ({
     drawer: null,
-    dialog: false
-  })
+    dialog: false,
+  }),
 };
 </script>
 <style lang="scss">

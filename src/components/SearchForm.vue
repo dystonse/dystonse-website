@@ -16,7 +16,7 @@
         <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:" />
       </v-col>
       <v-col cols="12" md="2">
-        <v-btn>Suche starten</v-btn>
+        <v-btn @click="$store.commit('increment');">Suche starten</v-btn>
       </v-col>
     </v-row>
   </v-container>
