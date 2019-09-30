@@ -14,7 +14,7 @@ export default new Vuex.Store({
       state: "new",
       startStation: {},
       destinationStation: {},
-      date: new Date(),
+      date: new Date("2019-09-26T13:15:34.045Z"),
       time: "12:00",
       logs: [],
     }

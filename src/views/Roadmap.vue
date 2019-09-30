@@ -199,6 +199,27 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
 
+            <v-expansion-panel>
+              <v-expansion-panel-header class="title">Analyse-Tool für die Verkehrsplanung</v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <p>
+                  Zwar wurde Dystonse bisher für die Planung von individuellen Reisen erstellt. Aber auch für Zwecke der Verkehrsplanung könnte es nützlich sein.
+                </p>
+                <p>
+                  Schon bei der individuellen Nutzung ließen sich Trends feststellen: wann und wo häufen sich reale Anfragen, die nur Routen mit großer Unsicherheit und/oder langen Wartezeiten ergeben?
+                </p>
+                <p>
+                  Die Algorithmen von Dystonse ließen sich aber auch gezielt zur Analyse ganzer Verkehrsnetze einsetzen:
+                </p>
+                <ul>
+                  <li>Finden von Schwächen im Fahrplan</li>
+                  <li>Erfassung realer Verspätungen und Einschätzung ihres Einflusses auf relevante Reisezeiten</li>
+                  <li>Evaluierung von geplanten Fahrplänen</li>
+                  <li>Disponierung von Fahrzeugen im konkreten Ausnahmefall</li>
+                </ul>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+
           </v-expansion-panels>
         </v-col>
       </v-row>

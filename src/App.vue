@@ -18,7 +18,11 @@
       <router-view />
     </v-content>
     <v-footer color="primary" app>
-      <span class="white--text">&copy; 2019</span>
+      <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
+      <a href="https://github.com/" class="white--text mx-1">Fork me on GitHub</a>
+      <div class="flex-grow-1"></div>
+      <span class="white--text" v-if="this.$store.state.serverConnected">Server-Status: verbunden</span>
+      <span class="error--text" v-if="!this.$store.state.serverConnected">Server-Status: getrennt</span>
     </v-footer>
     <search-dialog v-if="$vuetify.breakpoint.smAndDown"/>
   </v-app>
