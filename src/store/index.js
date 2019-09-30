@@ -9,11 +9,14 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     count: 0,
+    serverConnected: false,
     currentSearch: {
+      state: "new",
       startStation: {},
       destinationStation: {},
-      date: {},
-      time: {},
+      date: new Date(),
+      time: "12:00",
+      logs: [],
     }
   },
   mutations: {
@@ -26,6 +29,15 @@ export default new Vuex.Store({
     setDestinationStation(state, stationId) {
       state.currentSearch.destinationStation = stations(stationId)[0];
     },
+    setSearchState(state, searchState) {
+      state.currentSearch.state = searchState;
+    },
+    setConnectionState(state, connectionState) {
+      state.serverConnected = connectionState;
+    },
+    SOCKET_message(state, message) {
+      state.currentSearch.logs.push(message);
+    }
   },
   actions: {
     setStartStation(context, stationId) {
@@ -33,6 +45,13 @@ export default new Vuex.Store({
     },
     setDestinationStation(context, stationId) {
       context.commit("setDestinationStation", stationId);
+    },
+    startSearch(context) {
+      if (!context.state.currentSearch.startStation.id) { return; }
+      if (!context.state.currentSearch.destinationStation.id) { return; }
+
+      context.commit("setSearchState", "running");
+      this._vm.$socket.emit("startSearch", context.state.currentSearch);
     },
   }
 })
