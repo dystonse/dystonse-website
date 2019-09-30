@@ -1,10 +1,9 @@
 <template>
   <MglMap :accessToken="accessToken" :mapStyle="mapStyle" :center="center" :zoom="zoom" ref="theMap" @load="mapLoaded">
     <MglNavigationControl position="top-right" />
-    <MglGeolocateControl position="top-right" />
-    <MglMarker :coordinates="coordinates" :offset="[-12,0]" anchor="left">
+    <MglMarker :coordinates="coordinates" :offset="[-16,0]" anchor="left">
       <div class="text-center" slot="marker">
-        <v-menu v-model="cardVisible">
+        <v-menu v-model="cardVisible" top>
           <template v-slot:activator="{ on }">
             <v-chip pill color="white" class="elevation-5">
               <v-avatar left>
@@ -18,10 +17,11 @@
           </template>
 
           <v-card max-width="344">
+            <v-img class="white--text" height="130px" :src="photoUrl" v-if="photoUrl != null" gradient="to top, rgba(0, 0, 0, 0.6) 20px, transparent 60px">
+              <v-card-title class="align-end fill-height">{{stationName}}</v-card-title>
+            </v-img>
+            <v-card-title class="align-end fill-height" v-if="photoUrl == null">{{stationName}}</v-card-title>
             <v-card-text>
-              <p class="headline text--primary">
-                {{stationName}}
-              </p>
               <div>
                 <product-image product="suburban" />
                 <product-image product="subway" />
@@ -45,16 +45,20 @@
       </div>
 
     </MglMarker>
+    <v-snackbar v-model="snackbar">
+      {{ snackbarText }}
+
+    </v-snackbar>
   </MglMap>
 </template>
 
 <script>
+import stationPhotos from "vbb-station-photos";
 import Mapbox from "mapbox-gl";
 import ProductImage from "../components/ProductImage";
 import {
   MglMap,
   MglNavigationControl,
-  MglGeolocateControl,
   MglMarker
 } from "vue-mapbox";
 
@@ -88,7 +92,7 @@ function addStations(map) {
       // make circles larger as the user zooms from z12 to z22
       "circle-radius": {
         base: 1.75,
-        stops: [[6, 0], [8, 2], [11, 3], [13, 5], [17, 22]]
+        stops: [[6, 0], [8, 2], [11, 3], [13, 5], [15, 16]]
       },
       // color circles by ethnicity, using a match expression
       // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
@@ -112,9 +116,9 @@ function addStations(map) {
 
       "circle-stroke-width": {
         base: 1,
-        stops: [[6, 0], [9, 1], [12, 1.5], [15, 2], [17, 5]]
+        stops: [[6, 0], [9, 4], [12, 8], [15, 12], [17, 25]]
       },
-      "circle-stroke-color": "#FFF"
+      "circle-stroke-color": "transparent"
     },
     source: {
       type: "geojson",
@@ -133,7 +137,7 @@ function addStations(map) {
       },
       "text-anchor": "bottom",
       "text-justify": "center",
-      "text-radial-offset": 1
+      "text-radial-offset": 1.5
     },
     paint: {
       "text-halo-color": "#FFF",
@@ -194,11 +198,19 @@ function addLines(map, name) {
   map.addLayer(geoJsonLayer);
 }
 
+function getPhotoFor(id) {
+  var station = stationPhotos.small[id];
+  if (station) {
+    var photos = station[Object.keys(station)[0]];
+    return photos["entrance"];
+  }
+  return null;
+}
+
 export default {
   components: {
     MglMap,
     MglNavigationControl,
-    MglGeolocateControl,
     MglMarker,
     ProductImage
   },
@@ -215,6 +227,10 @@ export default {
       stationName: "",
       cardVisible: false,
       buttonColor: "#FF0000",
+      photoUrl: null,
+      station: {},
+      snackbarText: "",
+      snackbar: false
     };
   },
 
@@ -223,6 +239,12 @@ export default {
     this.mapbox = Mapbox;
   },
   methods: {
+    showSnackbar: function(text) {
+      this.snackbarText = text;
+      this.snackbar = true;
+    },
+    setStart: function() {},
+    setDestination: function() {},
     mapLoaded: function({ map, component }) {
       let that = this;
       that.mapCanvas = map.getCanvasContainer();
@@ -242,13 +264,32 @@ export default {
           var feature = e.features[0];
           that.coordinates = feature.geometry.coordinates.slice();
           that.stationName = feature.properties.name;
-          that.stationId = feature.properties.id;
+          that.station = {
+            id: feature.properties.id,
+            name: feature.properties.name
+          };
           that.buttonColor = productColors[feature.properties.products];
+          that.photoUrl = getPhotoFor(feature.properties.id);
         }
       });
 
       map.on("mouseleave", "stations", function(e) {
         that.coordinates = [0, 0];
+      });
+
+      map.on("click", "stations", function(e) {
+        if (e.features.length === 1 && !that.cardVisible) {
+          var feature = e.features[0];
+          that.coordinates = feature.geometry.coordinates.slice();
+          that.stationName = feature.properties.name;
+          that.station = {
+            id: feature.properties.id,
+            name: feature.properties.name
+          };
+          that.buttonColor = productColors[feature.properties.products];
+          that.photoUrl = getPhotoFor(feature.properties.id);
+          // that.cardVisible = true;
+        }
       });
     }
   }

@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "mapbox-gl": "^1.4.0",
+    "vbb-station-photos": "^2.0.1",
     "vbb-stations": "^7.0.0",
     "vbb-stations-autocomplete": "^4.0.0",
     "vue": "^2.6.10",
