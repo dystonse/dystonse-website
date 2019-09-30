@@ -40,6 +40,14 @@ export default {
     drawer: null,
     dialog: false,
   }),
+  sockets: {
+    connect() {
+      this.$store.commit("setConnectionState", true);
+    },
+    disconnect() {
+      this.$store.commit("setConnectionState", false);
+    },
+  },
 };
 </script>
 <style lang="scss">
