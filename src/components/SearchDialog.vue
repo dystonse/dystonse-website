@@ -1,73 +1,35 @@
 <!-- myapp/src/components/SearchDialog.vue-->
 <template>
-  <v-container>
-
-    <v-row align="center">
-      <v-col cols="12" md="2">
-        <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
-      </v-col>
-      <v-col cols="12" md="2">
-        <station-input v-model="searchParams.startStation" placeholder="Start:" />
-      </v-col>
-      <v-col cols="12" md="2">
-        <station-input v-model="searchParams.destionationStation" placeholder="Ziel:" />
-      </v-col>
-      <v-col cols="12" md="2">
-        <date-input v-model="searchParams.selectedDate" placeholder="Datum:" />
-      </v-col>
-      <v-col cols="12" md="2">
-        <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:" />
-      </v-col>
-      <v-col cols="12" md="2">
-        <v-btn>Route Suchen</v-btn>
-      </v-col>
-    </v-row>
-
-  </v-container>
+  <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+    <v-card>
+      <v-toolbar dark color="primary">
+        <v-btn icon dark @click="dialog = false">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
+        <v-toolbar-title>Route suchen</v-toolbar-title>
+        <div class="flex-grow-1"></div>
+        <v-toolbar-items>
+          <v-btn disabled dark text @click="dialog = false">Suche starten</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+      <search-form/>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>
-import stationInput from "../components/StationInput";
-import dateInput from "../components/DateInput";
-import timeInput from "../components/TimeInput";
+import SearchForm from "../components/SearchForm";
 
 export default {
   name: "search-dialog",
   components: {
-    stationInput,
-    dateInput,
-    timeInput
+    SearchForm,
   },
   data() {
     return {
-      searchParams: {
-        startStation: null,
-        destionationStation: null,
-        selectedDate: new Date(),
-        time: "12:00"
-      },
-      valid: true,
-      query: "",
-      items: []
+      dialog: true,
     };
   },
-  computed: {
-    complete: function() {
-      return (
-        this.searchParams.startStation &&
-        this.searchParams.destionationStation &&
-        this.searchParams.selectedDate &&
-        this.searchParams.time
-      );
-    }
-  },
-  sockets: {},
-  methods: {
-    startRouteSearch: function() {
-      this.$socket.emit("startSearch", this.searchParams);
-      this.close();
-    }
-  }
 };
 </script>
 <style>

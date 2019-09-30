@@ -6,42 +6,12 @@
 
     <v-app-bar color="primary" clipped-left app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <!-- <v-dialog v-if="this.$router.currentRoute.name == 'Routing'" v-model="dialog" max-width="600px" color="primary">
-        <template v-slot:activator="{ on }">
-          <v-btn color="black" outlined v-on="on">
-            Route suchen…
-          </v-btn>
-        </template>
-
-        <v-card>
-          <v-toolbar dark color="primary">
-            <v-btn icon dark @click="dialog = false">
-              <v-icon>mdi-close</v-icon>
-            </v-btn>
-            <v-toolbar-title>Routen-Optionen</v-toolbar-title>
-
-          </v-toolbar>
-
-          <v-card-text>
-            <SearchDialog />
-          </v-card-text>
-
-          <v-divider></v-divider>
-
-          <v-card-actions>
-            <div class="flex-grow-1"></div>
-            <v-btn color="primary" text @click="dialog = false">
-              Abbrechen
-            </v-btn>
-            <v-btn color="success" text @click="dialog = false">
-              Suchen
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog> -->
-      <!-- <template v-if="this.$router.currentRoute.name == 'Routing'" #extension> -->
-        <SearchDialog />
-      <!-- </template> -->
+      <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+      <div class="flex-grow-1"></div>
+      <template v-if="this.$router.currentRoute.name == 'Routing'">
+        <SearchForm v-if="$vuetify.breakpoint.mdAndUp" />
+        <v-btn v-if="$vuetify.breakpoint.smAndDown">Route suchen…</v-btn>
+      </template>
     </v-app-bar>
 
     <v-content>
@@ -50,18 +20,21 @@
     <v-footer color="primary" app>
       <span class="white--text">&copy; 2019</span>
     </v-footer>
+    <search-dialog v-if="$vuetify.breakpoint.smAndDown"/>
   </v-app>
 </template>
 
 <script>
 import Navigation from "./components/Navigation";
 import SearchDialog from "./components/SearchDialog";
+import SearchForm from "./components/SearchForm";
 
 export default {
   name: "App",
   components: {
     Navigation,
-    SearchDialog
+    SearchDialog,
+    SearchForm,
   },
   data: () => ({
     drawer: null,
