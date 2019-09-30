@@ -1,5 +1,5 @@
 <template>
-  <v-autocomplete solo background-color="#FFFFFF66" :value="value" @update:search-input="handleInput" @input="handleSelection" :items="items" item-text="name" item-value="id" :placeholder="placeholder" required>
+  <v-autocomplete hide-details solo background-color="#FFFFFF66" :value="value" @update:search-input="handleInput" @input="handleSelection" :items="items" item-text="name" item-value="id" :placeholder="placeholder" required>
     <template v-slot:item="data">
       <template v-if="typeof data.item !== 'object'">
         <v-list-item-content v-text="data.item"></v-list-item-content>

@@ -1,22 +1,28 @@
 <!-- myapp/src/components/SearchDialog.vue-->
 <template>
   <v-container>
-    <v-form v-model="valid">
-      <v-row>
-        <v-col cols="12" md="6">
-          <station-input v-model="searchParams.startStation" placeholder="Start:"/>
-        </v-col>
-        <v-col cols="12" md="6">
-          <station-input v-model="searchParams.destionationStation" placeholder="Ziel:"/>
-        </v-col>
-        <v-col cols="12" md="6">
-          <date-input v-model="searchParams.selectedDate" placeholder="Datum:"/>
-        </v-col>
-         <v-col cols="12" md="6">
-          <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:"/>
-        </v-col>
-      </v-row>
-    </v-form>
+
+    <v-row align="center">
+      <v-col cols="12" md="2">
+        <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
+      </v-col>
+      <v-col cols="12" md="2">
+        <station-input v-model="searchParams.startStation" placeholder="Start:" />
+      </v-col>
+      <v-col cols="12" md="2">
+        <station-input v-model="searchParams.destionationStation" placeholder="Ziel:" />
+      </v-col>
+      <v-col cols="12" md="2">
+        <date-input v-model="searchParams.selectedDate" placeholder="Datum:" />
+      </v-col>
+      <v-col cols="12" md="2">
+        <time-input v-model="searchParams.time" placeholder="Abfahrtszeit:" />
+      </v-col>
+      <v-col cols="12" md="2">
+        <v-btn>Route Suchen</v-btn>
+      </v-col>
+    </v-row>
+
   </v-container>
 </template>
 
@@ -30,7 +36,7 @@ export default {
   components: {
     stationInput,
     dateInput,
-    timeInput,
+    timeInput
   },
   data() {
     return {

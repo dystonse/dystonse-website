@@ -11,6 +11,7 @@
       >
         <template v-slot:activator="{ on }">
           <v-text-field
+            hide-details
             v-model="date"
             :placeholder="placeholder"
             solo background-color="#FFFFFF66"

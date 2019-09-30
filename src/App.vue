@@ -6,19 +6,7 @@
 
     <v-app-bar color="primary" clipped-left app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-layout>
-        <v-row align="center">
-          <v-col>
-            <v-img :src="require('./assets/logo-sw.png')" contain height="48" width="128"></v-img>
-          </v-col>
-          <v-col>
-            <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
-          </v-col>
-        </v-row>
-      </v-layout>
-      <div class="flex-grow-1"></div>
-
-      <v-dialog v-if="this.$router.currentRoute.name == 'Routing'" v-model="dialog" max-width="600px" color="primary">
+      <!-- <v-dialog v-if="this.$router.currentRoute.name == 'Routing'" v-model="dialog" max-width="600px" color="primary">
         <template v-slot:activator="{ on }">
           <v-btn color="black" outlined v-on="on">
             Route suchen…
@@ -50,11 +38,10 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-      </v-dialog>
-      <!--
-      <template v-if="this.$router.currentRoute.name == 'Routing'" #extension>
+      </v-dialog> -->
+      <!-- <template v-if="this.$router.currentRoute.name == 'Routing'" #extension> -->
         <SearchDialog />
-      </template>-->
+      <!-- </template> -->
     </v-app-bar>
 
     <v-content>
