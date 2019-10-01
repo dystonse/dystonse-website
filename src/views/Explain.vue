@@ -24,7 +24,17 @@
             <p>Jein!</p>
 
             <p>Hier auf dieser Website geht sie noch nicht. Auf meiner Maschine funktioniert es. Und wie die Ausgaben davon aussehen, kann man
-            <a href="https://twitter.com/LenaSchimmel/status/1165036456634716160">in diesem Twitter-Thread</a> nachlesen.</p>
+              <a href="https://twitter.com/LenaSchimmel/status/1165036456634716160">in diesem Twitter-Thread</a> nachlesen.</p>
+          </v-col>
+           <v-col class="col-sm-12 col-md-5">
+            <Tweet id="1165036472812146688">
+              <v-progress-circular indeterminate color="primary"></v-progress-circular>
+            </Tweet>
+           </v-col>
+          <v-col class="col-sm-12 col-md-5">
+            <Tweet id="1165392690625818624">
+              <v-progress-circular indeterminate color="primary"></v-progress-circular>
+            </Tweet>
           </v-col>
         </v-row>
       </v-container>
@@ -32,8 +42,12 @@
   </div>
 </template>
 <script>
+import { Tweet } from "vue-tweet-embed";
 export default {
-  name: "Explain"
+  name: "Explain",
+  components: {
+    "Tweet": Tweet
+  }
 };
 </script>
 <style lang="scss">

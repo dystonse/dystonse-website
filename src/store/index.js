@@ -16,7 +16,7 @@ export default new Vuex.Store({
       destinationStation: {},
       date: new Date("2019-09-26T13:15:34.045Z"),
       time: "12:00",
-      logs: [],
+      logs: ["Log-Ausgaben erscheinen hier, sobald die Suche gestartet wurde."],
     }
   },
   mutations: {

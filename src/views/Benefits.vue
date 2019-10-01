@@ -6,6 +6,10 @@
         <v-col class="col-sm-12 col-md-8">
           <h1>Erwarteter Nutzen von Dystonse</h1>
 
+          <v-alert color="warning" dark icon="list" border="left" prominent>
+            Sehr geehrte Fahrgäste, dieser Abschnitt der Webseite verkehrt heute mit verkürzter Wagenreihung. Wir bemühen uns, Ihnen bald statt der Liste einen vollständigen Text bereit zu stellen. Bis dahin bitten wir Sie um Geduld.
+          </v-alert>
+
           <h2>Direkte Ziele für Nutzer_innen</h2>
           <ul>
             <li>Beste Route finden</li>
