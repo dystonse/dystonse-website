@@ -49,18 +49,33 @@
       {{ snackbarText }}
 
     </v-snackbar>
+    <v-bottom-sheet v-model="logSheetVisible" inset>
+      <template v-slot:activator="{ on }">
+        <v-btn color="orange" dark v-on="on">Log anzeigen
+        </v-btn>
+      </template>
+      <v-sheet class="text-center" height="400px">
+        <v-list style="max-height: 400px" dense class="overflow-y-auto">
+          <v-subheader>LOG-AUSGABE</v-subheader>
+          <v-list-item v-for="(item, index) in logs" :key="index">
+            {{ item }}
+          </v-list-item>
+        </v-list>
+      </v-sheet>
+    </v-bottom-sheet>
   </MglMap>
 </template>
 
 <script>
 import stationPhotos from "vbb-station-photos";
+import stations from "vbb-stations";
 import Mapbox from "mapbox-gl";
 import ProductImage from "../components/ProductImage";
 import { mapState } from "vuex";
-import util from "util";
-
-
+// import util from "util";
 import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
+
+var additionalRouteFeatures = [];
 
 // Geojson from http://sharemap.org/ilisad/Berlin_U-bahn_future_development#!webgl contains unbuilt tracks
 
@@ -151,8 +166,34 @@ function addRoutingLayer(map) {
     id: "routing",
     type: "circle",
     paint: {
-      "circle-radius": 20,
-      "circle-color": "#FF0000"
+      "circle-radius": {
+        base: 1.75,
+        stops: [[6, 0], [8, 4], [11, 5], [13, 7], [15, 18]]
+      },
+      "circle-stroke-width": {
+        base: 1,
+        stops: [[6, 0], [9, 1], [12, 2], [15, 3], [17, 4]]
+      },
+      "circle-color": "transparent",
+      "circle-stroke-color": [
+        "match",
+        ["get", "role"],
+        "start",
+        "#FF0000",
+        "destination",
+        "#00FF00",
+        "open",
+        "#0000FF",
+        "closed",
+        "#000000",
+        "active",
+        "#FFFFFF",
+        "change",
+        "#FFFF00",
+        "through",
+        "#AAAA00",
+        /* other */ "#000"
+      ]
     },
     source: "routingMapSource"
   };
@@ -231,7 +272,8 @@ export default {
       photoUrl: null,
       station: {},
       snackbarText: "",
-      snackbar: false
+      snackbar: false,
+      logSheetVisible: false
     };
   },
   // We use computed data as a workaround to watch for changes in nested state
@@ -239,6 +281,7 @@ export default {
     ...mapState({
       startStation: state => state.currentSearch.startStation,
       destinationStation: state => state.currentSearch.destinationStation,
+      logs: state => state.currentSearch.logs
     })
   },
   watch: {
@@ -253,6 +296,17 @@ export default {
     // We need to set mapbox-gl library here in order to use it in template
     this.mapbox = Mapbox;
     this.mapInstance = null; // important: don't store the map instance inside reactive data/state, it will break
+  },
+  sockets: {
+    setrole: function(payload) {
+      var station = stations(payload.stationid)[0];
+      var f = this.createStationFeature(station, payload.role);
+      console.log("set role " + payload.role + " for " + station.name);
+      if (f) {
+        additionalRouteFeatures.push(f);
+        this.rebuildRoutingLayer();
+      }
+    }
   },
   methods: {
     showSnackbar: function(text) {
@@ -317,30 +371,32 @@ export default {
       this.mapInstance = map;
     },
     rebuildRoutingLayer: function() {
-      console.log("Change is on the rise!");
       var features = [];
 
-      this.addStationRole(
-        features,
+      var f1 = this.createStationFeature(
         this.$store.state.currentSearch.startStation,
         "start"
       );
-      this.addStationRole(
-        features,
+      var f2 = this.createStationFeature(
         this.$store.state.currentSearch.destinationStation,
         "destination"
       );
-      
-      this.mapInstance.getSource("routingMapSource").setData({ type: "FeatureCollection", features: features });
-    },
-    addStationRole: function(features, station, role) {
-      console.log("Add as " + role + ": " + util.inspect(station));
-
-      if (station == null || station.location == null) {
-        return;
+      if (f1) {
+        features.push(f1);
       }
-
-      features.push({
+      if (f2) {
+        features.push(f2);
+      }
+      features = features.concat(additionalRouteFeatures);
+      this.mapInstance
+        .getSource("routingMapSource")
+        .setData({ type: "FeatureCollection", features: features });
+    },
+    createStationFeature: function(station, role) {
+      if (station == null || station.location == null) {
+        return null;
+      }
+      return {
         type: "Feature",
         geometry: {
           type: "Point",
@@ -352,7 +408,7 @@ export default {
           products: station.product,
           role: role
         }
-      });
+      };
     }
   }
 };

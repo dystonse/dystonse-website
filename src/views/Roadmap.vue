@@ -15,7 +15,7 @@
               <v-expansion-panel-header class="title" color="red">Website mobiltauglich machen</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  Die aktuelle Website wurde mit Vue.js und material-vue umgesetzt. Damit ist es prinzipiell möglich, Websites responsive - und somit mobiltauglich - zu machen. Dafür müssen aber noch diverse Details angepasst werden. Auch wenn später native Apps folgen sollen, ist eine mobiltaugliche Website ein naheliegender Schritt: mit wenig zusätzlichem Aufwand wird eine Lösung geschaffen, mit der auch Interessierte Dystonse unterwegs testen können, für die eine Installation eine Hemmschwelle darstellt.
+                  Die aktuelle Website wurde mit Vue.js und vuetify umgesetzt. Damit ist es prinzipiell möglich, Websites responsive - und somit mobiltauglich - zu machen. Dafür müssen aber noch diverse Details angepasst werden. Auch wenn später native Apps folgen sollen, ist eine mobiltaugliche Website ein naheliegender Schritt: mit wenig zusätzlichem Aufwand wird eine Lösung geschaffen, mit der auch Interessierte Dystonse unterwegs testen können, für die eine Installation eine Hemmschwelle darstellt.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -42,10 +42,10 @@
             </v-expansion-panel>
 
             <v-expansion-panel>
-              <v-expansion-panel-header class="title">APIs standartisieren, um verschiedene Front- und Backends kompatibel zu machen</v-expansion-panel-header>
+              <v-expansion-panel-header class="title">APIs standardisieren, um verschiedene Front- und Backends kompatibel zu machen</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  Der neuartige Ansatz mit seinen Wahrscheinlichkeitsverteilungen verlangt zwar aufeinander abgestimmte Front- und Backends - dennoch soll keine abgeschirmte Insellösung entstehen. Mit dem ???? bestehen bereits einfache, gut verständliche Schnittstellen für ÖPNV-Software. Soweit möglich, wollen wir alle Komponenten damit kompatibel halten, und die (offene) Spezifikation des ???? um die Wahrscheinlichkeits-Angaben erweitern.
+                  Der neuartige Ansatz mit seinen Wahrscheinlichkeitsverteilungen verlangt zwar aufeinander abgestimmte Front- und Backends - dennoch soll keine abgeschirmte Insellösung entstehen. Mit dem <a href="https://github.com/public-transport/friendly-public-transport-format/">FPTF (Friendly Public Transport Format)</a> bestehen bereits einfache, gut verständliche Schnittstellen für ÖPNV-Software. Soweit möglich, wollen wir alle Komponenten damit kompatibel halten, und die (offene) Spezifikation des FPTF um die Wahrscheinlichkeits-Angaben erweitern.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -54,13 +54,13 @@
               <v-expansion-panel-header class="title">Native Apps für Android und iOS</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  ÖPNV-Routing-Software wird vorallem unterwegs genutzt - also ist die Bedienbarkeit auf Mobilgeräten unverzichtbar. Im Gegensatz zu einer mobiltauglichen Version dieser Website ist mit deutlich mehr Entwicklungsaufwand zu rechnen - aber auch einer Reihe von Features, die mit Websites nicht denkbar sind.
+                  ÖPNV-Routing-Software wird vor allem unterwegs genutzt - also ist die Bedienbarkeit auf Mobilgeräten unverzichtbar. Im Gegensatz zu einer mobiltauglichen Version dieser Website ist mit deutlich mehr Entwicklungsaufwand zu rechnen - aber auch einer Reihe von Features, die mit Websites nicht denkbar sind.
                 </p>
                 <p>
                   Eine erste Version der Apps kann eine einfache GUI sein, die fast sämtliche Logik weiterhin an den Server auslagert.
                 </p>
                 <p>
-                  Im späteren Verlauf kann dann versucht werden, die Suchlogik ebenfalls auf dem Mobilgerät auszuführen und damit weniger abhängig von der Internetverbindung zu machen (siehe eigener Punkt weiter unten)
+                  Im späteren Verlauf kann dann versucht werden, die Suchlogik ebenfalls auf dem Mobilgerät auszuführen und damit weniger abhängig von der Internetverbindung zu machen (siehe eigener Punkt weiter unten).
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -77,7 +77,7 @@
               <v-expansion-panel-header class="title">Ergebnisse einfacher visualisieren</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  Die aktuelle Visualisierung der Suchergebnisse erfüllt auch den Zweck, die interne Arbeitsweise offen zu legen und technik-begeisterte Nerds und Power-User anzusprechen. Wir haben aber auch das Ziel, die komplexen Abläufe einer dynamisch optimierten ÖPNV-Reise für weitere Zielgruppen zu erschließen. Dazu braucht es weitere Kompromisse zwischen detaillierter und abstrahierter Darstellung. Wie können wir die Verteilung von möglichen Reisezeiten für Reisende verständlich machen, die nicht darin geübt sind, zweidimensionale Graphen zu lesen? Ab welchem Grad der Vereinfachung hätte Dystonse keinen Mehrwert mehr gegenüber herkömlichen ÖPNV-Suchen?
+                  Die aktuelle Visualisierung der Suchergebnisse erfüllt auch den Zweck, die interne Arbeitsweise offen zu legen und technik-begeisterte Nerds und Power-User anzusprechen. Wir haben aber auch das Ziel, die komplexen Abläufe einer dynamisch optimierten ÖPNV-Reise für weitere Zielgruppen zu erschließen. Dazu braucht es weitere Kompromisse zwischen detaillierter und abstrahierter Darstellung. Wie können wir die Verteilung von möglichen Reisezeiten für Reisende verständlich machen, die nicht darin geübt sind, zweidimensionale Graphen zu lesen? Ab welchem Grad der Vereinfachung hätte Dystonse keinen Mehrwert mehr gegenüber herkömmlichen ÖPNV-Suchen?
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -104,7 +104,7 @@
                   Wie im vorherigen Absatz beschrieben, kann sich die ideale Route während der Fahrt anhand von aktualisierten Echtzeitdaten verändern. Auch wenn im Voraus nicht exakt bekannt ist, wie sich Verspätungen verändern werden, sind die Eventualitäten bereits Teil des Berechnungsmodells. Anstatt also eine einzelne Route zu suchen und nur für diese Zeitverteilungen zu berechnen, könnten "Entscheidungspunkte" schon vorher berechnet werden, also Punkte, an denen dynamisch während der Fahrt entschieden werden muss, wie die Reise am besten forgesetzt werden sollte.
                 </p>
                 <p>
-                  Letzltich wäre es denkbar, schon ab Beginn mehrere solcher Entscheidungsmöglichkeiten in die Gesamtroute und die Abschätzung der Ankunftszeit einzuberechnen. Der Entwicklungs- und Rechenaufwand für die Suche würde dadruch nur geringfügig steigen. Dafür wäre es noch komlexer, das Ergebnis für die Reisenden darzustellen und begreiflich zu machen.
+                  Letztlich wäre es denkbar, schon ab Beginn mehrere solcher Entscheidungsmöglichkeiten in die Gesamtroute und die Abschätzung der Ankunftszeit einzuberechnen. Der Entwicklungs- und Rechenaufwand für die Suche würde dadurch nur geringfügig steigen. Dafür wäre es noch komplexer, das Ergebnis für die Reisenden darzustellen und begreiflich zu machen.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -113,7 +113,7 @@
               <v-expansion-panel-header class="title">Realistischere Prognosen für den Fahrtverlauf</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  Aktuell wird ein sehr einfaches - wenn auch faktenbasiertes - Modell verwendet, um die Verspätungen von Fahrzeugen vorher zu sagen. Uns liegen bereits mehrere Gigabyte an historischen Verspätungsdaten vor, aus denen ein viel detaillierteres Modell erstellt werden könnte, bis hin zu einem neuronalen Netz das ein Dutzend Faktoren einbezieht.
+                  Aktuell wird ein sehr einfaches - wenn auch faktenbasiertes - Modell verwendet, um die Verspätungen von Fahrzeugen vorher zu sagen. Uns liegen bereits mehrere Gigabyte an historischen Verspätungsdaten vor, aus denen ein viel detaillierteres Modell erstellt werden könnte, bis hin zu einem neuronalen Netz, das ein Dutzend Faktoren einbezieht.
                 </p>
                 <p>
                   Wir erhoffen uns aber auch schon von weniger komplexen Ansätzen eine deutliche Verbesserung der Vorhersagen.
@@ -138,7 +138,7 @@
                   Wenn die Suche effizient neu implementiert ist - voraussichtlich in der Sprache Rust - entsteht ein Programmkern, der prinzipiell auch direkt auf Mobilgeräten ausgeführt werden kann. Im Idealfall wäre damit z.B. ein vollständiger Offline-Betrieb möglich (dann natürlich wieder ohne Echtzeitdaten, außer ggf. der eigenen Verspätung im aktuellen Fahrzeug). Eine vollständige Simulation des Verkehrsnetzes (z.B. ganz Berlin oder sogar ganz Deutschland) würde aber wohl mehr Speicherplatz, Rechenleistung und Akku-Kapazität brauchen, als Mobilgeräte bieten können.
                 </p>
                 <p>
-                  Wir wollen daher erproben, ob vor Fahrbeginn ein vereinfachtes Modell auf das Mobilgerät übertragen werden kann, das nur die relevanten Stationen, Linien und Abfahrtszeiten enthält. Interessant wäre das z.B. für Pendler und andere Menschen, die öfter zwischen den selben Stationen unterwegs sind. Der DB-Navigator enthielt eine solche Funktion bereits ca. 2006, also vor dem Aufkommen von Smartphones in der JavaME-Version.
+                  Wir wollen daher erproben, ob vor Fahrtbeginn ein vereinfachtes Modell auf das Mobilgerät übertragen werden kann, das nur die relevanten Stationen, Linien und Abfahrtszeiten enthält. Interessant wäre das z.B. für Pendler und andere Menschen, die öfter zwischen den selben Stationen unterwegs sind. Der DB-Navigator enthielt eine solche Funktion bereits ca. 2006, also vor dem Aufkommen von Smartphones in der JavaME-Version.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -165,10 +165,10 @@
                   <li>leicht verfügbare Fahrplan- und Netzdaten in vielen Formaten</li>
                   <li>Echtzeitdaten</li>
                   <li>Anschauliches Beispiel für eine Metropole mit riesiger Fahrzeuganzahl</li>
-                  <li>Ortskenntnisse bei den Entwicklerinnen, sowie die Möglihckeit, ab und zu vor Ort zu testen</li>
+                  <li>Ortskenntnisse bei den Entwicklerinnen, sowie die Möglichkeit, ab und zu vor Ort zu testen</li>
                 </ul>
                 <p>
-                  Der Ansatz von Dystonse ist natürlich für viele Regionen außerhalb von Berlin übertragbar, und eigentlich sogar dort noch notwendiger, wo die Takte der Linien weniger eng sind als in Berlin. Wir möchten daher die nötigen Schritte unternehmen, um Dystonse universell einsetzbar zu machen. Dazu gehören z.B. Tools, die Daten in verschiedenen Ausgangsformaten annehmen. Neben ??? sind auch GTFS und das proprietäre Hafas-Format in Deutschland relevant. Zudem wird eine einheitliche europäische Lösung diskutiert. Freie Software für die Konvertierung zwischen diesen Formaten besteht bereits, so dass hier hoffentlich nur ein paar Versuche und das Aufstellen von best practices nötig sein werden.
+                  Der Ansatz von Dystonse ist natürlich für viele Regionen außerhalb von Berlin übertragbar, und eigentlich sogar dort noch notwendiger, wo die Takte der Linien weniger eng sind als in Berlin. Wir möchten daher die nötigen Schritte unternehmen, um Dystonse universell einsetzbar zu machen. Dazu gehören z.B. Tools, die Daten in verschiedenen Ausgangsformaten annehmen. Neben FPTF sind auch GTFS und das proprietäre Hafas-Format in Deutschland relevant. Zudem wird eine einheitliche europäische Lösung diskutiert. Freie Software für die Konvertierung zwischen diesen Formaten besteht bereits, so dass hier hoffentlich nur ein paar Versuche und das Aufstellen von best practices nötig sein werden.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -181,21 +181,43 @@
                 </p>
                 <p>
                   Es besteht auch schon ein grober Plan, wie diese Skalierbarkeit erreicht werden könnte:
-
-                  ZEICHNUNG
+                </p>
+                <p>
+                  (Zeichnung folgt)
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
 
             <v-expansion-panel>
-              <v-expansion-panel-header class="title">Weitere Verkehsmittel einbinden</v-expansion-panel-header>
+              <v-expansion-panel-header class="title">Weitere Verkehrsmittel einbinden</v-expansion-panel-header>
               <v-expansion-panel-content>
                 <p>
-                  Aktuell bezieht Dystonse nur S- und U-Bahnen in die Suche ein. Busse, Straßenbahnen und Züge sind derzeit nur deaktiviert, um die Datenmengen und Rechenaufwände in Grenzen zu halten. Sobald eine effizierere Implementierung in z.B. Rust vorliegt, können diese Verkehrsmittel einfach hinzu genommen werden.
+                  Aktuell bezieht Dystonse nur S- und U-Bahnen in die Suche ein. Busse, Straßenbahnen und Züge sind derzeit nur deaktiviert, um die Datenmengen und Rechenaufwände in Grenzen zu halten. Sobald eine effizientere Implementierung in z.B. Rust vorliegt, können diese Verkehrsmittel einfach hinzu genommen werden.
                 </p>
                 <p>
                   Der Algorithmus setzt jedoch nicht voraus, dass alle Verkehrsmittel einem festen Fahrplan folgen müssen. Stattdessen ist er eine gute Basis, um später auch Fußwege, (Anruf-Sammel-)Taxen, (Leih-)Fahrrärer und -Roller einzubeziehen. Auch die unvorhersehbare Verfügbarkeit von Leihfahzeugen lässt sich in das statistische Modell aufnehmen, um eine wirklich umfassende, multi-modale Suche zu realisieren.
                 </p>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+
+            <v-expansion-panel>
+              <v-expansion-panel-header class="title">Analyse-Tool für die Verkehrsplanung</v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <p>
+                  Zwar wurde Dystonse bisher für die Planung von individuellen Reisen erstellt. Aber auch für Zwecke der Verkehrsplanung könnte es nützlich sein.
+                </p>
+                <p>
+                  Schon bei der individuellen Nutzung ließen sich Trends feststellen: wann und wo häufen sich reale Anfragen, die nur Routen mit großer Unsicherheit und/oder langen Wartezeiten ergeben?
+                </p>
+                <p>
+                  Die Algorithmen von Dystonse ließen sich aber auch gezielt zur Analyse ganzer Verkehrsnetze einsetzen:
+                </p>
+                <ul>
+                  <li>Finden von Schwächen im Fahrplan</li>
+                  <li>Erfassung realer Verspätungen und Einschätzung ihres Einflusses auf relevante Reisezeiten</li>
+                  <li>Evaluierung von geplanten Fahrplänen</li>
+                  <li>Disponierung von Fahrzeugen im konkreten Ausnahmefall</li>
+                </ul>
               </v-expansion-panel-content>
             </v-expansion-panel>
 

@@ -10,14 +10,15 @@
   "dependencies": {
     "@vue/cli": "^3.11.0",
     "core-js": "^2.6.5",
-    "mapbox-gl": "^1.4.0",
+    "mapbox-gl": "^0.53.1",
     "vbb-station-photos": "^2.0.1",
     "vbb-stations": "^7.0.0",
     "vbb-stations-autocomplete": "^4.0.0",
     "vue": "^2.6.10",
     "vue-mapbox": "^0.4.1",
     "vue-router": "^3.0.3",
-    "vuetify": "^2.0.0",
+    "vue-socket.io": "^3.0.7",
+    "vuetify": "^1.5.18",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
@@ -36,6 +37,8 @@
     "vue-cli-plugin-vuetify": "^0.6.3",
     "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.2.2",
-    "vuetify-scss": "^1.4.0"
+    "vuetify-scss": "^1.4.0",
+    "stylus-loader": "~3.0.2",
+    "stylus": "~0.54.7"
   }
 }

@@ -2,21 +2,21 @@
   <v-container>
     <v-list>
 
+       <v-list-item to="/about">
+        <v-list-item-action>
+          <v-icon>info</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>Über Dystonse</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
       <v-list-item to="/route">
         <v-list-item-action>
           <v-icon>directions_transit</v-icon>
         </v-list-item-action>
         <v-list-item-content>
           <v-list-item-title>Routensuche</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item to="/explain">
-        <v-list-item-action>
-          <v-icon>show_chart</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title>Diagramm-Erklärung</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -58,7 +58,7 @@
         </v-list-item-content>
       </v-list-item>
 
-<v-list-item to="/details/benefits">
+    <v-list-item to="/details/benefits">
         <v-list-item-action>
           <v-icon>star</v-icon>
         </v-list-item-action>

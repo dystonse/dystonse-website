@@ -17,50 +17,42 @@ export default new Router({
   routes: [
     {
       path: "/",
-      redirect: "/route",
+      redirect: "/explain",
     },
     {
       path: "/route",
-      name: "Routing",
+      name: "Routensuche",
       component: Routing,
     },
     {
-      path: "/explain",
-      name: "Explain",
+      path: "/about",
+      name: "Über Dystonse",
       component: Explain,
     },
     {
       path: "/details/history",
-      name: "History",
+      name: "Vorgeschichte",
       component: History,
     },
     {
       path: "/details/algorithm",
-      name: "Algorithm",
+      name: "Algorithmus",
       component: Algorithm,
     },
     {
       path: "/details/open-data",
-      name: "OpenData",
+      name: "Open-Data",
       component: OpenData,
     },
     {
       path: "/details/roadmap",
-      name: "Roadmap",
+      name: "Zukünftige Features",
       component: Roadmap,
     },
     {
       path: "/details/benefits",
-      name: "Benefits",
+      name: "Erwarteter Nutzen",
       component: Benefits,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
 })

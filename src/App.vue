@@ -8,7 +8,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
       <div class="flex-grow-1"></div>
-      <template v-if="this.$router.currentRoute.name == 'Routing'">
+      <template v-if="this.$router.currentRoute.name == 'Routensuche'">
         <SearchForm v-if="$vuetify.breakpoint.mdAndUp" />
         <v-btn v-if="$vuetify.breakpoint.smAndDown">Route suchen…</v-btn>
       </template>
@@ -18,7 +18,11 @@
       <router-view />
     </v-content>
     <v-footer color="primary" app>
-      <span class="white--text">&copy; 2019</span>
+      <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
+      <a href="https://github.com/lenaschimmel/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
+      <div class="flex-grow-1"></div>
+      <span class="white--text" v-if="this.$store.state.serverConnected">Server-Status: verbunden</span>
+      <span class="error--text" v-if="!this.$store.state.serverConnected">Server-Status: getrennt</span>
     </v-footer>
     <search-dialog v-if="$vuetify.breakpoint.smAndDown"/>
   </v-app>
@@ -40,6 +44,14 @@ export default {
     drawer: null,
     dialog: false,
   }),
+  sockets: {
+    connect() {
+      this.$store.commit("setConnectionState", true);
+    },
+    disconnect() {
+      this.$store.commit("setConnectionState", false);
+    },
+  },
 };
 </script>
 <style lang="scss">
