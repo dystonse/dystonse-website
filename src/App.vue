@@ -19,7 +19,7 @@
     </v-content>
     <v-footer color="primary" app>
       <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
-      <a href="https://github.com/" class="white--text mx-1">Fork me on GitHub</a>
+      <a href="https://github.com/lenaschimmel/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
       <div class="flex-grow-1"></div>
       <span class="white--text" v-if="this.$store.state.serverConnected">Server-Status: verbunden</span>
       <span class="error--text" v-if="!this.$store.state.serverConnected">Server-Status: getrennt</span>
