@@ -72,7 +72,7 @@ import stations from "vbb-stations";
 import Mapbox from "mapbox-gl";
 import ProductImage from "../components/ProductImage";
 import { mapState } from "vuex";
-import util from "util";
+// import util from "util";
 
 import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
 
@@ -167,8 +167,16 @@ function addRoutingLayer(map) {
     id: "routing",
     type: "circle",
     paint: {
-      "circle-radius": 20,
-      "circle-color": [
+      "circle-radius": {
+        base: 1.75,
+        stops: [[6, 0], [8, 4], [11, 5], [13, 7], [15, 18]]
+      },
+      "circle-stroke-width": {
+        base: 1,
+        stops: [[6, 0], [9, 1], [12, 2], [15, 3], [17, 4]]
+      },
+      "circle-color": "transparent",
+      "circle-stroke-color": [
         "match",
         ["get", "role"],
         "start",
@@ -177,6 +185,14 @@ function addRoutingLayer(map) {
         "#00FF00",
         "open",
         "#0000FF",
+        "closed",
+        "#000000",
+        "active",
+        "#FFFFFF",
+        "change",
+        "#FFFF00",
+        "through",
+        "#AAAA00",
         /* other */ "#000"
       ]
     },
@@ -286,6 +302,7 @@ export default {
     setrole: function(payload) {
       var station = stations(payload.stationid)[0];
       var f = this.createStationFeature(station, payload.role);
+      console.log("set role " + payload.role + " for " + station.name);
       if (f) {
         additionalRouteFeatures.push(f);
         this.rebuildRoutingLayer();
@@ -355,7 +372,6 @@ export default {
       this.mapInstance = map;
     },
     rebuildRoutingLayer: function() {
-      console.log("Change is on the rise!");
       var features = [];
 
       var f1 = this.createStationFeature(
@@ -373,17 +389,12 @@ export default {
       if (f2) {
         features.push(f2);
       }
-      console.log("before: " + util.inspect(features));
-      console.log("dat fucker: " + additionalRouteFeatures);
       features = features.concat(additionalRouteFeatures);
-      console.log("afert: " + util.inspect(features));
       this.mapInstance
         .getSource("routingMapSource")
         .setData({ type: "FeatureCollection", features: features });
     },
     createStationFeature: function(station, role) {
-      console.log("Add as " + role + ": " + util.inspect(station));
-
       if (station == null || station.location == null) {
         return null;
       }
