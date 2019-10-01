@@ -8,7 +8,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>{{ this.$router.currentRoute.name }}</v-toolbar-title>
       <div class="flex-grow-1"></div>
-      <template v-if="this.$router.currentRoute.name == 'Routing'">
+      <template v-if="this.$router.currentRoute.name == 'Routensuche'">
         <SearchForm v-if="$vuetify.breakpoint.mdAndUp" />
         <v-btn v-if="$vuetify.breakpoint.smAndDown">Route suchen…</v-btn>
       </template>
