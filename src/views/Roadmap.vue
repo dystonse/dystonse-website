@@ -2,10 +2,9 @@
   <div>
     <v-container>
       <h1>Zukünftig geplante Features in Dystonse</h1>
-
+      <p>Wir bewerben uns aktuell für eine Föderung durch den <a href="https://prototypefund.de/">Prototype Fund</a>, daher ist die Aufteilung dieser Übersicht zeitlich daran orientiert.</p>
       <h2>Defintiv im Förderzeitraum</h2>
-
-      <p>Die folgenden Features sollten auf jeden Fall im Förderzeitraum umsetzbar sein:</p>
+      <p> Die folgenden Features sollten auf jeden Fall im Förderzeitraum umsetzbar sein:</p>
 
       <v-row justify="center">
         <v-col class="col-sm-12 col-md-8">
