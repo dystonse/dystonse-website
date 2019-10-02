@@ -15,7 +15,7 @@
                   <v-card-title class="headline">Bus fahren als tägliches<br/>Abenteuer</v-card-title>
                   <v-card-text>
                     <p>
-                    9 Jahre lang ist Lena jeden Tag mit dem Bus 30 Minuten zur Schule und 30 Minuten wieder zurück gefahren. Die Direkt&shy;ver&shy;bin&shy;dung von Tür zu Tür war naheliegend, aber meist völlig überfüllt und verspätet, so dass sie über die Jahre viele weniger offensichtliche Routen ausprobierte. Diese Strategie zu perfektionieren brauchte viele Jahre Optimierung. Wenn es du nur einfacher ginge… 
+                    9 Jahre lang ist Lena jeden Tag mit dem Bus 30 Minuten zur Schule und 30 Minuten wieder zurück gefahren. Die Direkt&shy;ver&shy;bin&shy;dung von Tür zu Tür war naheliegend, aber meist völlig überfüllt und verspätet, so dass sie über die Jahre viele weniger offensichtliche Routen ausprobierte. Diese Strategie zu perfektionieren brauchte viele Jahre Optimierung. Wenn es du nur einfacher ginge…
                     </p>
                   </v-card-text>
                 </v-card>
@@ -51,7 +51,6 @@
                 </v-card>
               </v-timeline-item>
                <v-timeline-item icon="more_vert" icon-color="white" color="#DDDDDD">
-                
               </v-timeline-item>
             </v-timeline>
           </v-col>

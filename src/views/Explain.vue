@@ -24,7 +24,7 @@
             <p>Jein!</p>
 
             <p>Inzwischen funktioniert die Suche auf der Website (insofern unten rechts "Server-Status: verbunden" steht) im Prinzip. Die Darstellung des Such-Vorgangs und vorallem des Ergebnisses ist aber noch <i>sehr</i> unübersichtlich. Außerdem gibt es noch keine Anzeige der Zeit-/Wahrscheinlichkeitsverteilungen, die dabei berechnet wurden.</p>
-              
+
             <p>Im Hintergrund wird das natürlich bereits berechnet. Wie die Ausgaben davon aussehen, kann man
               <a href="https://twitter.com/LenaSchimmel/status/1165036456634716160">in diesem Twitter-Thread</a> nachlesen.</p>
           </v-col>

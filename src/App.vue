@@ -10,7 +10,7 @@
       <div class="flex-grow-1"></div>
       <template v-if="this.$router.currentRoute.name == 'Routensuche'">
         <SearchForm v-if="$vuetify.breakpoint.mdAndUp" />
-        <v-btn v-if="$vuetify.breakpoint.smAndDown">Route suchen…</v-btn>
+        <v-btn v-if="$vuetify.breakpoint.smAndDown" @click="$store.commit('showSearchDialog')">Route suchen…</v-btn>
       </template>
     </v-app-bar>
 

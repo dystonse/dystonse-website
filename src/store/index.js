@@ -10,6 +10,7 @@ export default new Vuex.Store({
   state: {
     count: 0,
     serverConnected: false,
+    searchDialogVisible: false,
     currentSearch: {
       state: "new",
       startStation: {},
@@ -34,6 +35,12 @@ export default new Vuex.Store({
     },
     setConnectionState(state, connectionState) {
       state.serverConnected = connectionState;
+    },
+    showSearchDialog(state) {
+      state.searchDialogVisible = true;
+    },
+    hideSearchDialog(state) {
+      state.searchDialogVisible = false;
     },
     SOCKET_message(state, message) {
       state.currentSearch.logs.push(message);
