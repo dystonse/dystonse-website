@@ -47,22 +47,7 @@
     </MglMarker>
     <v-snackbar v-model="snackbar">
       {{ snackbarText }}
-
     </v-snackbar>
-    <v-bottom-sheet v-model="logSheetVisible" inset>
-      <template v-slot:activator="{ on }">
-        <v-btn color="orange" dark v-on="on">Log anzeigen
-        </v-btn>
-      </template>
-      <v-sheet class="text-center" height="400px">
-        <v-list style="max-height: 400px" dense class="overflow-y-auto">
-          <v-subheader>LOG-AUSGABE</v-subheader>
-          <v-list-item v-for="(item, index) in logs" :key="index">
-            {{ item }}
-          </v-list-item>
-        </v-list>
-      </v-sheet>
-    </v-bottom-sheet>
   </MglMap>
 </template>
 
@@ -273,7 +258,6 @@ export default {
       station: {},
       snackbarText: "",
       snackbar: false,
-      logSheetVisible: false
     };
   },
   // We use computed data as a workaround to watch for changes in nested state
@@ -281,7 +265,6 @@ export default {
     ...mapState({
       startStation: state => state.currentSearch.startStation,
       destinationStation: state => state.currentSearch.destinationStation,
-      logs: state => state.currentSearch.logs
     })
   },
   watch: {

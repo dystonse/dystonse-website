@@ -11,6 +11,7 @@ export default new Vuex.Store({
     count: 0,
     serverConnected: false,
     searchDialogVisible: false,
+    logVisible: false,
     currentSearch: {
       state: "new",
       startStation: {},
@@ -42,6 +43,12 @@ export default new Vuex.Store({
     hideSearchDialog(state) {
       state.searchDialogVisible = false;
     },
+    showLog(state) {
+      state.logVisible = true;
+    },
+    hideLog(state) {
+      state.logVisible = false;
+    },
     SOCKET_message(state, message) {
       state.currentSearch.logs.push(message);
     }
@@ -59,6 +66,7 @@ export default new Vuex.Store({
 
       context.commit("setSearchState", "running");
       this._vm.$socket.emit("startSearch", context.state.currentSearch);
+      context.commit("showLog");
     },
   }
 })
