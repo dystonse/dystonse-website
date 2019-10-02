@@ -133,7 +133,7 @@ function addStations(map) {
       },
       "text-anchor": "bottom",
       "text-justify": "center",
-      "text-radial-offset": 1.5
+      "text-offset": [0, -1],
     },
     paint: {
       "text-halo-color": "#FFF",
