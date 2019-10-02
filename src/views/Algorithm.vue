@@ -4,7 +4,7 @@
     <v-container>
       <v-row justify="center">
         <v-col class="col-sm-12 col-md-8">
-          <h1>Der Algorithmus, der Dysonse ermöglicht</h1>
+          <h1>Der Algorithmus, der Dystonse ermöglicht</h1>
 
           <v-alert color="error" dark icon="departure_board" border="left" prominent>
             Sehr geehrte Fahrgäste, die Ankunft dieses Textabschnittes verzögert sich wegen Bauarbeiten auf unbestimmte Zeit…

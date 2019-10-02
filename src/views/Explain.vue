@@ -11,7 +11,7 @@
 
             <p>Wir hatten nicht damit gerechnet, dass heute schon jemand hier vorbei schaut. Aktuell funktioniert noch nicht alles. Aber schauen Sie sich ruhig schon einmal um.</p>
 
-            <p>Was allerdings schon funktionieren sollte</p>
+            <p>Was allerdings schon funktionieren sollte:</p>
 
             <ul>
               <li>Die Karte unter <router-link to="/route">"Routensuche"</router-link> kann gezoomt, gescrollt und gedreht werden</li>
