@@ -6,3 +6,7 @@ git pull
 npm run build
 rm -R /var/www/dystonse/*
 cp -R dist/* /var/www/dystonse/
+
+cd /root/dystonse-search-node
+git pull
+forever restart test.js
