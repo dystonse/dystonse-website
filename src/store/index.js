@@ -18,6 +18,8 @@ export default new Vuex.Store({
       destinationStation: {},
       date: new Date("2019-09-26T13:15:34.045Z"),
       time: "12:00",
+      stationRoles: [],
+      lines: [],
       logs: ["Log-Ausgaben erscheinen hier, sobald die Suche gestartet wurde."],
     }
   },
@@ -49,8 +51,28 @@ export default new Vuex.Store({
     hideLog(state) {
       state.logVisible = false;
     },
+    clearRolesAndLines(state) {
+      state.currentSearch.stationRoles = [];
+      state.currentSearch.lines = [];
+    },
     SOCKET_message(state, message) {
       state.currentSearch.logs.push(message);
+    },
+    SOCKET_setrole(state, payload) {
+      for (var entry of state.currentSearch.stationRoles) {
+        if (entry.station.id === payload.station.id) {
+          if (entry.role === payload.role) {
+            return; // already there, nothing to change
+          } else {
+            entry.role = payload.role; // update instead of adding
+            return;
+          }
+        }
+      }
+      state.currentSearch.stationRoles.push(payload);
+    },
+    SOCKET_addline(state, payload) {
+      state.currentSearch.lines.push(payload);
     }
   },
   actions: {
@@ -64,6 +86,7 @@ export default new Vuex.Store({
       if (!context.state.currentSearch.startStation.id) { return; }
       if (!context.state.currentSearch.destinationStation.id) { return; }
 
+      context.commit("clearRolesAndLines");
       context.commit("setSearchState", "running");
       this._vm.$socket.emit("startSearch", context.state.currentSearch);
       context.commit("showLog");

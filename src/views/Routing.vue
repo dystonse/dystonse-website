@@ -48,6 +48,7 @@
     <v-snackbar v-model="snackbar">
       {{ snackbarText }}
     </v-snackbar>
+    <!-- <v-btn @click="printStuff();">Debug</v-btn> -->
   </MglMap>
 </template>
 
@@ -59,8 +60,6 @@ import ProductImage from "../components/ProductImage";
 import { mapState } from "vuex";
 // import util from "util";
 import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
-
-var additionalRouteFeatures = [];
 
 // Geojson from http://sharemap.org/ilisad/Berlin_U-bahn_future_development#!webgl contains unbuilt tracks
 
@@ -147,17 +146,47 @@ function addStations(map) {
 }
 
 function addRoutingLayer(map) {
-  var geoJsonRoutingLayer = {
-    id: "routing",
+  // Add an empty source. This will be replaces each time something changes.
+  map.addSource("routingMapSource", {
+    type: "geojson",
+    data: { type: "FeatureCollection", features: [] }
+  });
+
+  var geoJsonRoutingLineLayer = {
+    id: "routingLines",
+    type: "line",
+    layout: {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    paint: {
+      "line-width": {
+        base: 1,
+        stops: [[8, 0], [10, 4], [12, 7], [17, 20]]
+      },
+      "line-color": [
+        "match",
+        ["get", "role"],
+        "route",
+        "#5555DD",
+        "#000000" // other
+      ],
+      "line-opacity": 0.5,
+    },
+    source: "routingMapSource"
+  };
+
+  var geoJsonRoutingCircleLayer = {
+    id: "routingCircles",
     type: "circle",
     paint: {
       "circle-radius": {
         base: 1.75,
-        stops: [[6, 0], [8, 4], [11, 5], [13, 7], [15, 18]]
+        stops: [[6, 0], [8, 4], [11, 5], [13, 7], [15, 18]],
       },
       "circle-stroke-width": {
         base: 1,
-        stops: [[6, 0], [9, 1], [12, 2], [15, 3], [17, 4]]
+        stops: [[6, 0], [9, 2], [12, 3], [15, 5], [17, 7]],
       },
       "circle-color": "transparent",
       "circle-stroke-color": [
@@ -168,7 +197,7 @@ function addRoutingLayer(map) {
         "destination",
         "#00FF00",
         "open",
-        "#0000FF",
+        "#666666",
         "closed",
         "#000000",
         "active",
@@ -176,20 +205,34 @@ function addRoutingLayer(map) {
         "change",
         "#FFFF00",
         "through",
-        "#AAAA00",
+        "#0000FF",
         /* other */ "#000"
-      ]
+      ],
+      "circle-stroke-opacity": [
+        "match",
+        ["get", "role"],
+        "start",
+        1,
+        "destination",
+        1,
+        "open",
+        1,
+        "closed",
+        1,
+        "active",
+        1,
+        "change",
+        1,
+        "through",
+        1,
+        /* other */ 0
+      ],
     },
     source: "routingMapSource"
   };
 
-  // Add an empty source. This will be replaces each time something changes.
-  map.addSource("routingMapSource", {
-    type: "geojson",
-    data: { type: "FeatureCollection", features: [] }
-  });
-
-  map.addLayer(geoJsonRoutingLayer);
+  map.addLayer(geoJsonRoutingLineLayer);
+  map.addLayer(geoJsonRoutingCircleLayer);
 }
 
 function addLines(map, name) {
@@ -265,7 +308,34 @@ export default {
     ...mapState({
       startStation: state => state.currentSearch.startStation,
       destinationStation: state => state.currentSearch.destinationStation,
-    })
+      stationRoles: state => state.currentSearch.stationRoles,
+      lines: state => state.currentSearch.lines
+    }),
+    additionalRouteFeatures: function() {
+      var ret = [];
+      for (var entry of this.stationRoles) {
+        var f = this.createStationFeature(entry.station, entry.role);
+        // console.log("set role " + payload.role + " for " + station.name);
+        if (f) {
+          ret.push(f);
+        } else {
+          console.log("Unknown station id " + entry.station.name);
+        }
+      }
+      for (var line of this.lines) {
+        ret.push({
+          type: "Feature",
+          geometry: {
+            type: "LineString",
+            coordinates: line.points
+          },
+          properties: {
+            role: line.role
+          }
+        });
+      }
+      return ret;
+    }
   },
   watch: {
     startStation: function(station) {
@@ -273,23 +343,15 @@ export default {
     },
     destinationStation: function(station) {
       this.rebuildRoutingLayer();
+    },
+    additionalRouteFeatures: function() {
+      this.rebuildRoutingLayer();
     }
   },
   created() {
     // We need to set mapbox-gl library here in order to use it in template
     this.mapbox = Mapbox;
     this.mapInstance = null; // important: don't store the map instance inside reactive data/state, it will break
-  },
-  sockets: {
-    setrole: function(payload) {
-      var station = stations(payload.stationid)[0];
-      var f = this.createStationFeature(station, payload.role);
-      // console.log("set role " + payload.role + " for " + station.name);
-      if (f) {
-        additionalRouteFeatures.push(f);
-        this.rebuildRoutingLayer();
-      }
-    }
   },
   methods: {
     showSnackbar: function(text) {
@@ -311,6 +373,9 @@ export default {
       addLines(map, "subway");
       addStations(map);
       addRoutingLayer(map);
+
+      this.mapInstance = map;
+      this.rebuildRoutingLayer();
 
       const productColors = {
         S: "#00AB62",
@@ -370,7 +435,8 @@ export default {
       if (f2) {
         features.push(f2);
       }
-      features = features.concat(additionalRouteFeatures);
+      features = features.concat(this.additionalRouteFeatures);
+
       this.mapInstance
         .getSource("routingMapSource")
         .setData({ type: "FeatureCollection", features: features });
@@ -392,7 +458,15 @@ export default {
           role: role
         }
       };
-    }
+    },
+    printStuff: function() {
+      console.log(this.additionalRouteFeatures);
+      console.log(this.$store.state.currentSearch.lines);
+      console.log(this.$store.state.currentSearch.stationRoles);
+      for (var entry of this.$store.state.currentSearch.stationRoles) {
+        console.log(entry.role + " at " + entry.station.name);
+      }
+    },
   }
 };
 </script>
