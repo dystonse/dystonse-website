@@ -1,0 +1,1 @@
+ssh root@dystonse.lenaschimmel.de /root/dystonse-website/tool/deployFromServer.sh
