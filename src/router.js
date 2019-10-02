@@ -8,6 +8,7 @@ import History from './views/History.vue'
 import OpenData from './views/OpenData.vue'
 import Roadmap from './views/Roadmap.vue'
 import Routing from './views/Routing.vue'
+import Imprint from './views/Imprint.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: "/details/benefits",
       name: "Erwarteter Nutzen",
       component: Benefits,
+    },
+    {
+      path: "/imprint",
+      name: "Impressum",
+      component: Imprint,
     }
   ]
 })
