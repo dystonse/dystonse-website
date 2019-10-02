@@ -32,13 +32,13 @@
     "eslint-plugin-vue": "^5.0.0",
     "material-design-icons-iconfont": "^5.0.1",
     "node-sass": "^4.9.0",
-    "sass": "^1.17.4",
+    "sass": "^1.23.0",
     "sass-loader": "^7.1.0",
+    "stylus": "~0.54.7",
+    "stylus-loader": "~3.0.2",
     "vue-cli-plugin-vuetify": "^0.6.3",
     "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.2.2",
-    "vuetify-scss": "^1.4.0",
-    "stylus-loader": "~3.0.2",
-    "stylus": "~0.54.7"
+    "vuetify-scss": "^1.4.0"
   }
 }

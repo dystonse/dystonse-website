@@ -6,7 +6,6 @@
         <v-row justify="center">
           <v-col class="col-sm-12 col-md-8">
             <v-img :src="require('../assets/logo.png')" class="my-3" contain height="200"></v-img>
-            
             <h1>Huch!</h1>
             <h2>…die Dystonse-Website ist noch nicht ganz fertig :/</h2>
 
