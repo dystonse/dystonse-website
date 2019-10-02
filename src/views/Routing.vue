@@ -301,7 +301,7 @@ export default {
     setrole: function(payload) {
       var station = stations(payload.stationid)[0];
       var f = this.createStationFeature(station, payload.role);
-      console.log("set role " + payload.role + " for " + station.name);
+      // console.log("set role " + payload.role + " for " + station.name);
       if (f) {
         additionalRouteFeatures.push(f);
         this.rebuildRoutingLayer();
