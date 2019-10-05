@@ -1,6 +1,6 @@
 <!-- myapp/src/components/SearchDialog.vue-->
 <template>
-  <v-dialog v-model="searchDialogVisible" fullscreen hide-overlay transition="dialog-bottom-transition">
+  <v-dialog v-model="searchDialogVisible" :fullscreen="$vuetify.breakpoint.xs" persistent transition="dialog-bottom-transition">
     <v-card>
       <v-toolbar dark color="primary">
         <v-btn icon dark @click="$store.commit('hideSearchDialog')">

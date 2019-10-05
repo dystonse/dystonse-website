@@ -149,7 +149,7 @@
                   Falls die Mobilanwendung in der Lage ist, eigenständig Routen zu suchen, so würden diese Suchen ebenfalls enorm von Echtzeitdaten profitieren. Während der Fahrt sind dabei nur die Verspätungen von höchstens einem Dutzend Fahrzeugen relevant. Diese Daten können theoretisch auch über extrem schlechte Datenverbindungen erfolgen, die leider gerade bei Zugfahrten oft vorkommen.
                 </p>
                 <p>
-                  Bestehende Navigations-Apps setzen dafür auf TCP/IP-Verbindungen, die prinzipbedingt schlecht bis gar nicht mit schwachen Mobilfunkverbindungen funktionieren. In der Praxis können daber trotz "einem Balken Empfang" oft absolut keine Daten übertragen werden. Wie möchten versuchen, hier mittels UDP-Verbindungen auch über eine minimale Verbindung noch die relevanten Echtzeitdaten zu aktualisieren.
+                  Bestehende Navigations-Apps setzen dafür auf TCP/IP-Verbindungen, die <a href="https://blog.davidsingleton.org/mobiletcp/">prinzipbedingt schlecht bis gar nicht</a> mit schwachen Mobilfunkverbindungen funktionieren. In der Praxis können daber trotz "einem Balken Empfang" oft absolut keine Daten übertragen werden. Wie möchten versuchen, hier mittels UDP-Verbindungen auch über eine minimale Verbindung noch die relevanten Echtzeitdaten zu aktualisieren.
                 </p>
               </v-expansion-panel-content>
             </v-expansion-panel>
