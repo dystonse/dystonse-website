@@ -1,17 +1,20 @@
 <template>
-  <v-autocomplete hide-details solo background-color="#FFFFFF66" :search-input="stationName" @update:search-input="handleInput" @input="handleSelection" :items="items" item-text="name" item-value="id" :placeholder="placeholder" required ref="ac">
-    <template v-slot:item="data">
-      <template v-if="typeof data.item !== 'object'">
-        <v-list-item-content v-text="data.item"></v-list-item-content>
+  <v-autocomplete 
+    :value="value.id"
+    :items="items"
+    item-text="name"
+    item-value="id"
+    :placeholder="placeholder"
+    @input="handleSelection"
+    @update:search-input="handleInput"
+     hide-details solo background-color="#FFFFFF66">
+     <template v-slot:no-data>
+        <v-list-item>
+          <v-list-item-title>
+            Tippe einen Statiosnamen
+          </v-list-item-title>
+        </v-list-item>
       </template>
-      <template v-else>
-        <!--<v-img :src="require('../assets/vbb-logos/subway.svg')" contain height="24" width="24"></v-img>
-                <v-img :src="require('../assets/vbb-logos/suburban.svg')" contain height="24" width="24"></v-img>-->
-        <v-list-item-content>
-          <v-list-item-title v-html="data.item.name"></v-list-item-title>
-        </v-list-item-content>
-      </template>
-    </template>
   </v-autocomplete>
 
 </template>
@@ -19,43 +22,43 @@
 <script>
 import allStations from "vbb-stations";
 import autocomplete from "vbb-stations-autocomplete";
-import { mapState } from "vuex";
 
 export default {
+  // From the POV of the v-autocomplete, items are objects, but the value / model is always just an id. The id will only be used/kept/shown if it is present within the items.
   name: "station-input",
   data() {
     return {
-      query: null,
-      items: []
+      loadedItems: [],
     };
   },
-  props: ["value", "placeholder", "routeEnd"],
+  props: ["value", "placeholder"],
   computed: {
-    ...mapState({
-      startStationName: state => state.currentSearch.startStation.name,
-      destinationStationName: state =>
-        state.currentSearch.destinationStation.name
-    }),
-    stationName: function() {
-      return this.routeEnd === "start"
-        ? this.startStationName
-        : this.destinationStationName;
-    }
+    items: function() {
+      if (this.loadedItems.filter(v => v.id === this.value).length > 0) {
+        return this.loadedItems;
+      }
+
+      if (!this.value || !this.value.id) {
+        return this.loadedItems;
+      }
+
+      var defaultItem = {
+        id: this.value.id,
+        name: this.value.name,
+      }
+      return this.loadedItems.concat([defaultItem]);
+    },
   },
   methods: {
     handleInput: async function(val) {
       if (this.query === val) return;
       this.query = val;
       if (val) {
-        this.items = await this.stationSearch(val);
+        this.loadedItems = await this.stationSearch(val);
       }
     },
     handleSelection: function(val) {
-      if (this.routeEnd === "start") {
-        this.$store.dispatch("setStartStation", val);
-      } else {
-        this.$store.dispatch("setDestinationStation", val);
-      }
+      this.$emit("input", val);
     },
     stationSearch: function(input) {
       if (input.length < 1) {

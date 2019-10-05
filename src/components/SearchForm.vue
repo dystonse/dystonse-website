@@ -4,10 +4,10 @@
 
     <v-row align="center">
       <v-col cols="12" md="3">
-        <station-input :value="$store.state.currentSearch.startStation" route-end="start" placeholder="Start:" />
+        <station-input v-model="startStation" placeholder="Start:" />
       </v-col>
       <v-col cols="12" md="3">
-        <station-input v-model="$store.state.currentSearch.destinationStation" route-end="destination" placeholder="Ziel:" />
+        <station-input v-model="destinationStation" placeholder="Ziel:" />
       </v-col>
       <v-col cols="12" md="2">
         <date-input v-model="$store.state.currentSearch.date" placeholder="Datum:" />
@@ -26,6 +26,8 @@
 import stationInput from "../components/StationInput";
 import dateInput from "../components/DateInput";
 import timeInput from "../components/TimeInput";
+import { mapState } from "vuex";
+import util from "util";
 
 export default {
   name: "search-form",
@@ -36,33 +38,40 @@ export default {
   },
   data() {
     return {
-      searchParams: {
-        startStation: null,
-        destionationStation: null,
-        selectedDate: new Date(),
-        time: "12:00"
-      },
-      valid: true,
-      query: "",
-      items: []
     };
   },
   computed: {
     complete: function() {
       return (
-        this.searchParams.startStation &&
-        this.searchParams.destionationStation &&
-        this.searchParams.selectedDate &&
-        this.searchParams.time
+        this.currentSearch.startStation &&
+        this.currentSearch.destionationStation &&
+        this.currentSearch.date &&
+        this.currentSearch.time
       );
-    }
+    },
+    ...mapState({
+      currentSearch: state => state.currentSearch
+    }),
+    startStation: {
+      get() {
+        console.log("get startStation in SearchForm: " + util.inspect(this.currentSearch.startStation));
+        return this.currentSearch.startStation;
+      },
+      set(stationId) {
+        this.$store.commit("setStartStation", stationId);
+      }
+    },
+    destinationStation: {
+      get() {
+        console.log("get destinationStation in SearchForm: " + util.inspect(this.currentSearch.destinationStation));
+        return this.currentSearch.destinationStation;
+      },
+      set(stationId) {
+        this.$store.commit("setDestinationStation", stationId);
+      }
+    },
   },
-  sockets: {},
   methods: {
-    startRouteSearch: function() {
-      this.$socket.emit("startSearch", this.searchParams);
-      this.close();
-    }
   }
 };
 </script>
