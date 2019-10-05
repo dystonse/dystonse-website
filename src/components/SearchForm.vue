@@ -16,7 +16,7 @@
         <time-input v-model="$store.state.currentSearch.time" placeholder="Abfahrtszeit:" />
       </v-col>
       <v-col cols="12" md="2" class="text-end">
-        <v-btn @click="$store.dispatch('startSearch'); $store.commit('hideSearchDialog');" color="secondary" :disabled="!complete">Suche starten</v-btn>
+        <v-btn @click="$store.dispatch('startSearch'); $store.commit('hideSearchDialog');" color="secondary">Suche starten</v-btn>
       </v-col>
     </v-row>
   </v-container>
