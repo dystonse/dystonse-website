@@ -1,6 +1,9 @@
 <template>
-  <v-sheet height="400px">
-    <v-chart :options="graphoptions" autoresize theme="ovilia-green" />
+  <v-sheet height="400px" class="d-flex align-center">
+    <v-chart v-if="ready" :options="graphoptions" autoresize theme="ovilia-green" />
+    <v-alert v-if="!ready" color="warning" dark icon="show_chart" border="left" prominent class="flex-grow-1">
+        Der Graph wird erst angezeigt, nachdem eine Suche abgeschlossen wurde.
+    </v-alert>
   </v-sheet>
 </template>
 <script>
@@ -23,6 +26,9 @@ export default {
     return {};
   },
   computed: {
+    ready: function() {
+      return this.$store.state.currentSearch.fullGraph && this.$store.state.currentSearch.fullGraph.length > 1;
+    },
     graphoptions: function() {
       var theSource = this.$store.state.currentSearch.fullGraph;
       console.log("The source: " + util.inspect(theSource));
@@ -72,8 +78,8 @@ export default {
         // to the first column by default.
         xAxis: {
           type: "time",
-          min: "2019-09-26T12:00:00.725Z",
-          max: "2019-09-26T18:00:00.725Z",
+          min: theSource[1][0],
+          max: theSource[theSource.length - 1][0],
           axisPointer: {
             show: true
           }
