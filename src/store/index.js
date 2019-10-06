@@ -12,6 +12,7 @@ export default new Vuex.Store({
     serverConnected: false,
     searchDialogVisible: false,
     logVisible: false,
+    graphVisible: false,
     currentSearch: {
       state: "new",
       startStation: {},
@@ -19,6 +20,8 @@ export default new Vuex.Store({
       date: new Date("2019-09-26T13:15:34.045Z"),
       time: "12:00",
       stationRoles: [],
+      stationGraphs: {},
+      fullGraph: [],
       lines: [],
       logs: ["Log-Ausgaben erscheinen hier, sobald die Suche gestartet wurde."],
     }
@@ -51,6 +54,12 @@ export default new Vuex.Store({
     hideLog(state) {
       state.logVisible = false;
     },
+    showGraph(state) {
+      state.graphVisible = true;
+    },
+    hideGraph(state) {
+      state.graphVisible = false;
+    },
     clearRolesAndLines(state) {
       state.currentSearch.stationRoles = [];
       state.currentSearch.lines = [];
@@ -70,6 +79,12 @@ export default new Vuex.Store({
         }
       }
       state.currentSearch.stationRoles.push(payload);
+    },
+    SOCKET_setstationgraph(state, payload) {
+      state.currentSearch.stationGraphs[payload.stationid] = payload.data;
+    },
+    SOCKET_setgraph(state, payload) {
+      state.currentSearch.fullGraph = payload.data;
     },
     SOCKET_addline(state, payload) {
       state.currentSearch.lines.push(payload);

@@ -37,14 +37,33 @@
       </v-sheet>
     </v-bottom-sheet>
 
+    <v-bottom-sheet persistent :value="graphVisible">
+      <v-sheet class="text-center">
+        <v-toolbar dark color="secondary">
+          <v-toolbar-title>Wahrscheinlichkeits-Graph</v-toolbar-title>
+          <div class="flex-grow-1"></div>
+          <v-btn icon dark @click="$store.commit('hideGraph')">
+            <v-icon>expand_more</v-icon>
+          </v-btn>
+        </v-toolbar>
+        <v-container>
+          <graph/>
+        </v-container>
+      </v-sheet>
+    </v-bottom-sheet>
+
     <v-footer color="primary" app>
       <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
       <a href="https://github.com/lenaschimmel/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
       <span class="white--text"> - </span>
       <router-link to="/imprint" class="white--text mx-1">Impressum</router-link>
       <div class="flex-grow-1 text-center">
-        <v-btn rounded small color="secondary" dark @click="$store.commit('showLog')">
+        <v-btn rounded small color="secondary" dark @click="$store.commit('showLog')" class="mx-4">
           Log-Ausgabe
+          <v-icon dark class="mx-2">expand_less</v-icon>
+        </v-btn>
+        <v-btn rounded small color="secondary" dark @click="$store.commit('showGraph')">
+          Graph
           <v-icon dark class="mx-2">expand_less</v-icon>
         </v-btn>
       </div>
@@ -59,6 +78,7 @@
 import Navigation from "./components/Navigation";
 import SearchDialog from "./components/SearchDialog";
 import SearchForm from "./components/SearchForm";
+import Graph from "./components/Graph";
 import { mapState } from "vuex";
 
 export default {
@@ -66,7 +86,8 @@ export default {
   components: {
     Navigation,
     SearchDialog,
-    SearchForm
+    SearchForm,
+    Graph,
   },
   data: () => ({
     drawer: null,
@@ -75,7 +96,8 @@ export default {
   computed: {
     ...mapState({
       logs: state => state.currentSearch.logs,
-      logVisible: state => state.logVisible
+      logVisible: state => state.logVisible,
+      graphVisible: state => state.graphVisible,
     })
   },
   sockets: {

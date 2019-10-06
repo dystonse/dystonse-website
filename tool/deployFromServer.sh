@@ -3,6 +3,7 @@ set -e
 
 cd /root/dystonse-website
 git pull
+npm install
 npm run build
 rm -R /var/www/dystonse/*
 cp -R dist/* /var/www/dystonse/
