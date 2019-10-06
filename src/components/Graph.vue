@@ -72,8 +72,8 @@ export default {
         // to the first column by default.
         xAxis: {
           type: "time",
-          min: "2019-10-26T12:00:00.725Z",
-          max: "2019-10-26T18:00:00.725Z",
+          min: "2019-09-26T12:00:00.725Z",
+          max: "2019-09-26T18:00:00.725Z",
           axisPointer: {
             show: true
           }
