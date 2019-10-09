@@ -11,36 +11,12 @@
                   <v-icon color="white">menu</v-icon>
                 </v-btn>
               </v-avatar>
-              {{stationName}}
+              {{station.name}}
             </v-chip>
 
           </template>
 
-          <v-card max-width="344">
-            <v-img class="white--text" height="130px" :src="photoUrl" v-if="photoUrl != null" gradient="to top, rgba(0, 0, 0, 0.6) 20px, transparent 60px">
-              <v-card-title class="align-end fill-height">{{stationName}}</v-card-title>
-            </v-img>
-            <v-card-title class="align-end fill-height" v-if="photoUrl == null">{{stationName}}</v-card-title>
-            <v-card-text>
-              <div>
-                <product-image product="suburban" />
-                <product-image product="subway" />
-                <product-image product="regional" />
-                <product-image product="express" />
-                <product-image product="bus" />
-                <product-image product="tram" />
-                <div class="flex-grow-1"></div>
-              </div>
-            </v-card-text>
-            <v-card-actions>
-              <v-btn color="primary" @click="setStart">
-                Als Start
-              </v-btn>
-              <v-btn color="primary" @click="setDestination">
-                Als Ziel
-              </v-btn>
-            </v-card-actions>
-          </v-card>
+          <station-popup :station="station" />
         </v-menu>
       </div>
 
@@ -53,11 +29,10 @@
 </template>
 
 <script>
-import stationPhotos from "vbb-station-photos";
-import stations from "vbb-stations";
 import Mapbox from "mapbox-gl";
-import ProductImage from "../components/ProductImage";
 import { mapState } from "vuex";
+import stations from "vbb-stations";
+import StationPopup from "../components/StationPopup";
 // import util from "util";
 import { MglMap, MglNavigationControl, MglMarker } from "vue-mapbox";
 
@@ -152,6 +127,15 @@ function addRoutingLayer(map) {
     data: { type: "FeatureCollection", features: [] }
   });
 
+  var geoJsonRoutingBackgroundLayer = {
+    id: "routingBackground",
+    type: "background",
+    paint: {
+      "background-color": "#FFFFFF",
+      "background-opacity": 0.5,
+    }
+  }
+
   var geoJsonRoutingLineLayer = {
     id: "routingLines",
     type: "line",
@@ -231,6 +215,8 @@ function addRoutingLayer(map) {
     source: "routingMapSource"
   };
 
+  // TODO add dynamically
+  // map.addLayer(geoJsonRoutingBackgroundLayer);
   map.addLayer(geoJsonRoutingLineLayer);
   map.addLayer(geoJsonRoutingCircleLayer);
 }
@@ -268,21 +254,12 @@ function addLines(map, name) {
   map.addLayer(geoJsonLayer);
 }
 
-function getPhotoFor(id) {
-  var station = stationPhotos.small[id];
-  if (station) {
-    var photos = station[Object.keys(station)[0]];
-    return photos["entrance"];
-  }
-  return null;
-}
-
 export default {
   components: {
     MglMap,
     MglNavigationControl,
     MglMarker,
-    ProductImage
+    StationPopup,
   },
   data() {
     return {
@@ -294,7 +271,6 @@ export default {
       zoom: 11,
       hoveredStateId: null,
       mapCanvas: null,
-      stationName: "",
       cardVisible: false,
       buttonColor: "#FF0000",
       photoUrl: null,
@@ -315,7 +291,6 @@ export default {
       var ret = [];
       for (var entry of this.stationRoles) {
         var f = this.createStationFeature(entry.station, entry.role);
-        // console.log("set role " + payload.role + " for " + station.name);
         if (f) {
           ret.push(f);
         } else {
@@ -358,12 +333,6 @@ export default {
       this.snackbarText = text;
       this.snackbar = true;
     },
-    setStart: function() {
-      this.$store.dispatch("setStartStation", this.station.id);
-    },
-    setDestination: function() {
-      this.$store.dispatch("setDestinationStation", this.station.id);
-    },
     mapLoaded: function({ map, component }) {
       let that = this;
 
@@ -387,13 +356,8 @@ export default {
         if (e.features.length === 1 && !that.cardVisible) {
           var feature = e.features[0];
           that.coordinates = feature.geometry.coordinates.slice();
-          that.stationName = feature.properties.name;
-          that.station = {
-            id: feature.properties.id,
-            name: feature.properties.name
-          };
+          that.station = stations(feature.properties.id)[0];
           that.buttonColor = productColors[feature.properties.products];
-          that.photoUrl = getPhotoFor(feature.properties.id);
         }
       });
 
@@ -405,13 +369,8 @@ export default {
         if (e.features.length === 1 && !that.cardVisible) {
           var feature = e.features[0];
           that.coordinates = feature.geometry.coordinates.slice();
-          that.stationName = feature.properties.name;
-          that.station = {
-            id: feature.properties.id,
-            name: feature.properties.name
-          };
+          that.station = stations(feature.properties.id)[0];
           that.buttonColor = productColors[feature.properties.products];
-          that.photoUrl = getPhotoFor(feature.properties.id);
           // that.cardVisible = true;
         }
       });

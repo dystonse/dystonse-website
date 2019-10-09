@@ -98,12 +98,19 @@ export default new Vuex.Store({
       context.commit("setDestinationStation", stationId);
     },
     startSearch(context) {
-      if (!context.state.currentSearch.startStation.id) { return; }
-      if (!context.state.currentSearch.destinationStation.id) { return; }
+      const cs = context.state.currentSearch;
+      if (!cs.startStation.id) { return; }
+      if (!cs.destinationStation.id) { return; }
 
       context.commit("clearRolesAndLines");
       context.commit("setSearchState", "running");
-      this._vm.$socket.emit("startSearch", context.state.currentSearch);
+      var searchRequest = {
+        startStation: cs.startStation,
+        destinationStation: cs.destinationStation,
+        date: cs.date,
+        time: cs.time,
+      };
+      this._vm.$socket.emit("startSearch", searchRequest);
       context.commit("showLog");
     },
   }

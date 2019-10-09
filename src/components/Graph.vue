@@ -10,7 +10,6 @@
 import ECharts from "vue-echarts";
 import "echarts/lib/chart/line";
 import "echarts/lib/chart/bar";
-import "echarts/lib/component/tooltip";
 import "echarts/lib/component/axisPointer";
 import "echarts/lib/component/legend";
 import "echarts/lib/component/dataZoom";
@@ -31,9 +30,7 @@ export default {
     },
     graphoptions: function() {
       var theSource = this.$store.state.currentSearch.fullGraph;
-      console.log("The source: " + util.inspect(theSource));
       var firstLine = theSource[0];
-      console.log("The first linme: " + util.inspect(firstLine));
       if (!firstLine) {
         return {};
       }
@@ -55,11 +52,7 @@ export default {
           }
         };
         series.push(next);
-        console.log("gepiuscht");
       }
-
-      console.log("Will return dimensions: " + util.inspect(dimensions));
-      console.log("Will return series: " + util.inspect(series));
 
       return {
         title: {
@@ -69,7 +62,6 @@ export default {
         },
 
         legend: {},
-        tooltip: {},
         dataset: {
           dimensions: dimensions,
           source: theSource

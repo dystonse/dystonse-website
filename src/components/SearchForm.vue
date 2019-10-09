@@ -54,7 +54,6 @@ export default {
     }),
     startStation: {
       get() {
-        console.log("get startStation in SearchForm: " + util.inspect(this.currentSearch.startStation));
         return this.currentSearch.startStation;
       },
       set(stationId) {
@@ -63,7 +62,6 @@ export default {
     },
     destinationStation: {
       get() {
-        console.log("get destinationStation in SearchForm: " + util.inspect(this.currentSearch.destinationStation));
         return this.currentSearch.destinationStation;
       },
       set(stationId) {
