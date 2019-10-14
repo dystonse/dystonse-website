@@ -11,6 +11,7 @@ import "echarts/lib/component/tooltip";
 import "echarts/lib/component/axisPointer";
 import "echarts/lib/component/legend";
 import "echarts/lib/component/dataZoom";
+import "echarts/lib/component/markLine";
 
 export default {
   name: "station-graph",
@@ -23,27 +24,42 @@ export default {
   props: ["station"],
   computed: {
     ready: function() {
-      return Boolean(
-        this.$store.state.currentSearch.stationGraphs[this.station.id]
-      );
+      return this.$store.state.currentSearch.stationGraphs[this.station.id] && this.$store.state.currentSearch.scheduledArrivals[this.station.id];
     },
     graphoptions: function() {
       var theSource = this.$store.state.currentSearch.stationGraphs[this.station.id];
+      var departures = this.$store.state.currentSearch.scheduledArrivals[this.station.id];
       var options = {
         title: {
           text: "Wahrscheinlichkeiten",
           show: false
         },
         dataset: {
-          source: theSource,
+          source: theSource
         },
         series: [
-          { type: "line", },
+          {
+            type: "line",
+            markLine: {
+              label: {
+                show: false
+              },
+              symbol: "none",
+              lineStyle: {
+                type: "solid",
+                opacity: 0.3,
+              },
+              data: departures.map(dep => { return { name: "Ankunft", xAxis: dep }; }),
+            }
+          }
         ],
         xAxis: {
           type: "time",
           min: theSource[1][0],
           max: theSource[theSource.length - 1][0],
+          splitLine: {
+            show: false
+          },
           axisPointer: {
             show: true
           }
@@ -51,8 +67,16 @@ export default {
         // Declare Y axis, which is a value axis.
         yAxis: { type: "value" },
         tooltip: {
-          trigger: "axis",
-        }
+          trigger: "axis"
+        },
+        dataZoom: [
+          {
+            // This dataZoom component controls x-axis by dafault
+            type: "slider", // this dataZoom component is dataZoom component of slider
+            start: 0,
+            end: 100
+          }
+        ],
       };
       console.log("Options: ");
       console.log(options);

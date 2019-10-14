@@ -42,7 +42,6 @@ export default {
       ];
       var series = [];
       for (var i = 0; i < firstLine.length; i++) {
-        dimensions.push("Spalte" + i);
         var next = {
           type: "line",
           name: firstLine[i],
@@ -51,7 +50,10 @@ export default {
             y: "Spalte" + i
           }
         };
+        if (i > 0) {
+          dimensions.push("Spalte" + i);
         series.push(next);
+      }
       }
 
       return {

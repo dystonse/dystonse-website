@@ -21,6 +21,7 @@ export default new Vuex.Store({
       time: "12:00",
       stationRoles: [],
       stationGraphs: {},
+      scheduledArrivals: {},
       fullGraph: [],
       lines: [],
       logs: ["Log-Ausgaben erscheinen hier, sobald die Suche gestartet wurde."],
@@ -82,6 +83,7 @@ export default new Vuex.Store({
     },
     SOCKET_setstationgraph(state, payload) {
       state.currentSearch.stationGraphs[payload.stationid] = payload.data;
+      state.currentSearch.scheduledArrivals[payload.stationid] = payload.scheduledArrivals;
     },
     SOCKET_setgraph(state, payload) {
       state.currentSearch.fullGraph = payload.data;
