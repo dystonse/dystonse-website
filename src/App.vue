@@ -18,6 +18,8 @@
       <router-view />
     </v-content>
 
+    <station-popup/>
+
     <v-bottom-sheet persistent :value="logVisible" inset>
       <v-sheet class="text-center">
         <v-toolbar dark color="secondary">
@@ -76,6 +78,7 @@
 
 <script>
 import Navigation from "./components/Navigation";
+import StationPopup from "./components/StationPopup";
 import SearchDialog from "./components/SearchDialog";
 import SearchForm from "./components/SearchForm";
 import Graph from "./components/Graph";
@@ -88,6 +91,7 @@ export default {
     SearchDialog,
     SearchForm,
     Graph,
+    StationPopup,
   },
   data: () => ({
     drawer: null,

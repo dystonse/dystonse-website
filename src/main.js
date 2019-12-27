@@ -11,7 +11,7 @@ Vue.use(
   new VueSocketIO({
     debug: true,
     // connection: "http://localhost:3000",
-    connection: "http://dystonse.lenaschimmel.de:3000",
+    connection: "https://dystonse.lenaschimmel.de:4443",
     vuex: {
       store,
       actionPrefix: "SOCKET_",

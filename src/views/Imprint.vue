@@ -10,10 +10,10 @@
           <h2>Angaben gemäß § 5 TMG und Verantwortliche für den Inhalt nach § 55 Abs. 2 RStV:</h2>
 
                 <ul>
-                    <li>Lena Schimmel</li>
+                    <li>Dystonse - Lena Schimmel und Kirstin Rohwer GbR</li>
                     <li>Chemnitzstr. 7</li>
                     <li>38118 Braunschweig</li>
-                    <li>E-Mail: <a href="mailto:mail@lenaschimmel.de">mail@lenaschimmel.de</a></li>
+                    <li>E-Mail: <a href="mailto:mail@dystonse.org">mail@dystonse.org</a></li>
                 </ul>
 
                 <h2>Haftung für Inhalte</h2>
