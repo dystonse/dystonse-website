@@ -28,14 +28,16 @@
             <p>Im Hintergrund wird das natürlich bereits berechnet. Wie die Ausgaben davon aussehen, kann man
               <a href="https://twitter.com/LenaSchimmel/status/1165036456634716160">in diesem Twitter-Thread</a> nachlesen.</p>
           </v-col>
+          <!-- Tweets will not show on firefox due to tracking protection. We could use something like
+          https://www.npmjs.com/package/ember-detect-tracking-protection to detect this and only show a message -->
            <v-col class="col-sm-12 col-md-5">
             <Tweet id="1165036472812146688">
-              <v-progress-circular indeterminate color="primary"></v-progress-circular>
+              <i>Tweet wird geladen… Eventuell wird dies durch den <a href="https://support.mozilla.org/de/kb/verbesserter-schutz-aktivitatenverfolgung-desktop?as=u&utm_source=inproduct">Verbesserten Schutz vor Aktivitätenverfolgung</a> oder ähnliches verhindert.</i>
             </Tweet>
            </v-col>
           <v-col class="col-sm-12 col-md-5">
             <Tweet id="1165392690625818624">
-              <v-progress-circular indeterminate color="primary"></v-progress-circular>
+              <i>Tweet wird geladen… Eventuell wird dies durch den <a href="https://support.mozilla.org/de/kb/verbesserter-schutz-aktivitatenverfolgung-desktop?as=u&utm_source=inproduct">Verbesserten Schutz vor Aktivitätenverfolgung</a> oder ähnliches verhindert.</i>
             </Tweet>
           </v-col>
         </v-row>
