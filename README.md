@@ -8,6 +8,9 @@
 
 This is a web frontend for [dystonse-search-node](https://github.com/lenaschimmel/dystonse-search-node), and later on for [dystonse-search-rust](https://github.com/lenaschimmel/dystonse-search-rust). It also contains some static information about the project and its status.
 
+## Try it!
+**The prototype of the Dystonse website is available at [dystonse.lenaschimmel.de](http://dystonse.lenaschimmel.de) - there you can test the algorithm and read about the background of this project.**
+
 ## Technical details
 This site uses (among other packages):
 
