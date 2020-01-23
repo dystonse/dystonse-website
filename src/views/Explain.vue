@@ -32,6 +32,7 @@
             <h2>Etwas mehr Hintergrund</h2>
             <p>Was intern bei der Routensuche geschieht, ist derzeit noch schwer nachvollziehbar. Einige Erklärungen kann man allerdings
               <a href="https://twitter.com/LenaSchimmel/status/1165036456634716160">in diesem Twitter-Thread</a> nachlesen.</p>
+            <p>Weitere Neueigkeiten twittern wir unter <a href="https://twitter.com/dystonse">@dystonse</a>.</p>
           </v-col>
           <!-- Tweets will not show on firefox due to tracking protection. We could use something like
           https://www.npmjs.com/package/ember-detect-tracking-protection to detect this and only show a message -->

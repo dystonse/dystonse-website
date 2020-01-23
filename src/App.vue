@@ -55,7 +55,7 @@
     </v-bottom-sheet>
 
     <v-footer color="primary" app>
-      <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
+      <span class="white--text"><a class="white--text mx-1" href="https://twitter.com/dystonse">@dystonse</a> auf Twitter - </span>
       <a href="https://github.com/dystonse/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
       <span class="white--text"> - </span>
       <router-link to="/imprint" class="white--text mx-1">Impressum</router-link>

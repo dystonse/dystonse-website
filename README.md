@@ -11,6 +11,8 @@ This is a web frontend for [dystonse-search-node](https://github.com/lenaschimme
 ## Try it!
 **The prototype of the Dystonse website is available at [dystonse.org](https://dystonse.org) - there you can test the algorithm and read about the background of this project.**
 
+You can also follow [@dystonse](https://twitter.com/dystonse) on Twitter.
+
 ## Technical details
 This site uses (among other packages):
 
