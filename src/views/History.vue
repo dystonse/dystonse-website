@@ -12,10 +12,10 @@
                 <span slot="opposite">1995 - 2004</span>
                 <v-card class="elevation-2" color="primary">
                   <v-card-text v-if="$vuetify.breakpoint.smAndDown"><i>1995 - 2004</i></v-card-text>
-                  <v-card-title class="headline">Bus fahren als tägliches<br/>Abenteuer</v-card-title>
+                  <v-card-title class="headline">Bus fahren als tägliches<br />Abenteuer</v-card-title>
                   <v-card-text>
                     <p>
-                    9 Jahre lang ist Lena jeden Tag mit dem Bus 30 Minuten zur Schule und 30 Minuten wieder zurück gefahren. Die Direkt&shy;ver&shy;bin&shy;dung von Tür zu Tür war naheliegend, aber meist völlig überfüllt und verspätet, so dass sie über die Jahre viele weniger offensichtliche Routen ausprobierte. Diese Strategie zu perfektionieren brauchte viele Jahre Optimierung. Wenn es du nur einfacher ginge…
+                      9 Jahre lang ist Lena jeden Tag mit dem Bus 30 Minuten zur Schule und 30 Minuten wieder zurück gefahren. Die Direkt&shy;ver&shy;bin&shy;dung von Tür zu Tür war naheliegend, aber meist völlig überfüllt und verspätet, so dass sie über die Jahre viele weniger offensichtliche Routen ausprobierte. Diese Strategie zu perfektionieren brauchte viele Jahre Optimierung. Wenn es du nur einfacher ginge…
                     </p>
                   </v-card-text>
                 </v-card>
@@ -40,17 +40,27 @@
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item icon="lens" large icon-color="#009CD1" color="#FF2F8F">
+              <v-timeline-item icon="lens" large icon-color="#FF2F8F" color="#009CD1">
                 <span slot="opposite">2019</span>
-                <v-card class="elevation-2" color="#FF2F8F">
-                  <v-card-text class="white--text" v-if="$vuetify.breakpoint.smAndDown"><i>2010</i></v-card-text>
+                <v-card class="elevation-2" color="#009CD1">
+                  <v-card-text class="white--text" v-if="$vuetify.breakpoint.smAndDown"><i>2019</i></v-card-text>
                   <v-card-title class="headline white--text">Prototyp(e Fund)</v-card-title>
                   <v-card-text class="white--text">
                     <b>Einfach mal machen!</b> - auch ohne, dass ein Unternehmen oder eine Universität daran beteiligt ist. Im August entstand in nur drei Tagen ein benutzbarer Prototyp des <i>Dystonse</i>-Algorithmus, und Ende September in ebenso kurzer Zeit diese Website, um die Routensuche benutzbar zu machen. Damit haben wir uns nun beim <a class="black--text" href="https://prototypefund.de/">Prototype Fund</a> beworben, und hoffen, das Projekt damit noch ein ganzes Stück weiter bringen zu können.
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
-               <v-timeline-item icon="more_vert" icon-color="white" color="#DDDDDD">
+              <v-timeline-item icon="lens" large icon-color="#009CD1" color="#FF2F8F">
+                <span slot="opposite">2020</span>
+                <v-card class="elevation-2" color="#FF2F8F">
+                  <v-card-text class="white--text" v-if="$vuetify.breakpoint.smAndDown"><i>2020</i></v-card-text>
+                  <v-card-title class="headline white--text">Förderung</v-card-title>
+                  <v-card-text class="white--text">
+                    <b>Wir haben's geschafft!</b> Wir sind unter den <a class="black--text" href="https://prototypefund.de/projects/round-7/">Finalisten der 7. Förderrunde</a> des Prototype Funds. Das bedeutet, dass wir ab März viel Zeit und Energie in die Entwicklung von Dystonse stecken können - und werden!
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item icon="more_vert" icon-color="white" color="#DDDDDD">
               </v-timeline-item>
             </v-timeline>
           </v-col>

@@ -56,7 +56,7 @@
 
     <v-footer color="primary" app>
       <span class="white--text">Dystonse ÖPNV-Routensuche - </span>
-      <a href="https://github.com/lenaschimmel/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
+      <a href="https://github.com/dystonse/dystonse-website" class="white--text mx-1">Fork me on GitHub</a>
       <span class="white--text"> - </span>
       <router-link to="/imprint" class="white--text mx-1">Impressum</router-link>
       <div class="flex-grow-1 text-center">
