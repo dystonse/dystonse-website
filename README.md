@@ -21,3 +21,7 @@ This site uses (among other packages):
 * mapbox
 * several vbb-modules
 * socket.io
+
+## Deployment
+ * `npm run build`
+ * Upload (currently not automated. We use e.g. FileZilla to upload the new version)
