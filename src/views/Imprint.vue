@@ -20,14 +20,8 @@
 
             <v-img height="200px" contain position="left" src="BMBF_gefördert vom_deutsch.jpg" />
 
-            Das "Software Sprint-Einzelvorhaben: Dystonse - Wahrscheinlichkeitsbasierte ÖPNV-Routensuche" wird unter dem Förderkennzeichen 01IS19S23 vom BMBF gefördert.
-
-            <h3>Kurzbschreibung des Vorhabens</h3>
-
-            Für die Suche nach der optimalen Route laut Fahrplan gibt es bereits gute digitale Hilfsmittel. Aber wenn der Bus verspätet ist oder die S-Bahn ausfällt, kommt Stress auf, denn die bisherigen Werkzeuge sind wenig hilfreich zum Abwägen der Optionen. Und die unzähligen Alternativrouten und ihre jeweiligen Ungewissheiten sind viel zu komplex, um „im Kopf“ eine gute Entscheidung zu treffen. Diese bisherige Unkalkulierbarkeit macht den ÖPNV für viele unattraktiv – dabei wäre es gut fürs Klima, wenn viel mehr Menschen auf Bus und Bahn umsteigen. Dystonse will das Vertrauen in den ÖPNV steigern, indem die (Un-)Sicherheit der Umstiege transparent gemacht wird und Handlungsoptionen vorgeschlagen werden.
-
-            Dystonse findet Routen im Nahverkehrsnetz (vorerst in Berlin, später auch an anderen Orten), und berechnet schon während der Suche mögliche sowie tatsächliche Verspätungen und Ausfälle mit ein. Die Suche erfolgt über die Website oder später mit Apps. Zu jeder Route gibt es daher nicht nur eine einzelne (optimistische) Ankunftszeit, sondern eine Übersicht, wann man mit welcher Wahrscheinlichkeit ankommen wird. Nach Wunsch können Routen nach Worst-, Average- und Best-Case ausgewählt werden. Künftig soll Dystonse auch während der Reise auf Veränderungen im Verkehr reagieren und in Echtzeit aktuelle Alternativrouten vorschlagen.
-
+            Das "Software Sprint-Einzelvorhaben: Dystonse - Wahrscheinlichkeitsbasierte ÖPNV-Routensuche" wird unter dem Förderkennzeichen 01IS19S23 <a href="https://prototypefund.de/project/dystonse-wahrscheinlichkeitsbasierte-oepnv-routensuche/">vom BMBF gefördert</a>.
+            
             <h2>Haftung für Inhalte</h2>
 
             <p>Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.</p>
