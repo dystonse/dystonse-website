@@ -144,6 +144,7 @@ function addRoutingLayer(map) {
     data: { type: "FeatureCollection", features: [] }
   });
 
+  /*
   var geoJsonRoutingBackgroundLayer = {
     id: "routingBackground",
     type: "background",
@@ -152,6 +153,7 @@ function addRoutingLayer(map) {
       "background-opacity": 0.5
     }
   };
+  */
 
   var geoJsonRoutingLineLayer = {
     id: "routingLines",

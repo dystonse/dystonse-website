@@ -78,8 +78,8 @@ export default {
           }
         ],
       };
-      console.log("Options: ");
-      console.log(options);
+      // console.log("Options: ");
+      // console.log(options);
       return options;
     }
   }
