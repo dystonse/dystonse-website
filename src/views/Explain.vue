@@ -27,8 +27,8 @@
 
             <h2>Die Förderung</h2>
             <p>Wir haben uns mit Dystonse für eine Förderung durch den <a href="https://prototypefund.de/">Prototype Fund</a> beworben - und <a href="https://prototypefund.de/projects/round-7/">wurden angenommen</a>! 🎉</p>
-            <p>Konkret heißt das, dass wir seit Anfang März 2020 gefördert werden. Die Förderung gibt uns die Möglichkeit, für sechs Monate viel Arbeitszeit in dieses Projekt zu stecken und viele Komponenten, die wir nur schnell als Proof of Concept zusammen gebastelt hatten, nochmal ordentlich neu zu entwickeln.</p>
-            <p>Aktuell sind wir sehr aktiv dabei, diese Erneuerung vorzubereiten. Von diesen Änderungen wird in den nächsten Wochen oder Monaten nur wenig zu sehen sein - dafür tut sich einiges hinter den Kulissen, was <a href="https://github.com/dystonse">auf GitHub</a> verfolgt werden kann.</p>
+            <p>Konkret heißt das, dass wir seit Anfang März 2020 vom BMBF gefördert werden (<a href="/imprint">Informationen zur Förderung</a>) Die Förderung gibt uns die Möglichkeit, für sechs Monate viel Arbeitszeit in dieses Projekt zu stecken und viele Komponenten, die wir nur schnell als Proof of Concept zusammen gebastelt hatten, nochmal ordentlich neu zu entwickeln.</p>
+            <p>Aktuell sind wir sehr aktiv dabei, diese Erneuerung vorzubereiten. Von diesen Änderungen wird in den nächsten Wochen oder Monaten nur wenig zu sehen sein - dafür tut sich einiges hinter den Kulissen, was <a href="https://github.com/dystonse">auf GitHub</a> und in unserem <a href="https://blog.dystonse.org">Blog</a> verfolgt werden kann.</p>
 
             <h2>Etwas mehr Hintergrund</h2>
             <p>Was intern bei der Routensuche geschieht, ist derzeit noch schwer nachvollziehbar. Einige Erklärungen kann man allerdings

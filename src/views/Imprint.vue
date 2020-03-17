@@ -17,11 +17,10 @@
             </ul>
 
             <h2>Förderung</h2>
-
-            <v-img height="200px" contain position="left" src="BMBF_gefördert vom_deutsch.jpg" />
+            <v-img height="200px" contain position="left" :src="require('../assets/bmbf.jpg')" />
 
             Das "Software Sprint-Einzelvorhaben: Dystonse - Wahrscheinlichkeitsbasierte ÖPNV-Routensuche" wird unter dem Förderkennzeichen 01IS19S23 <a href="https://prototypefund.de/project/dystonse-wahrscheinlichkeitsbasierte-oepnv-routensuche/">vom BMBF gefördert</a>.
-            
+
             <h2>Haftung für Inhalte</h2>
 
             <p>Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.</p>
