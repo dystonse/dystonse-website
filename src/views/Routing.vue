@@ -340,7 +340,7 @@ export default {
         if (f) {
           ret.push(f);
         } else {
-          console.log("Unknown station id " + entry.station.name);
+          // console.log("Unknown station id " + entry.station.name);
         }
       }
       for (var line of this.lines) {
@@ -465,12 +465,14 @@ export default {
       };
     },
     printStuff: function() {
+      /*
       console.log(this.additionalRouteFeatures);
       console.log(this.$store.state.currentSearch.lines);
       console.log(this.$store.state.currentSearch.stationRoles);
       for (var entry of this.$store.state.currentSearch.stationRoles) {
         console.log(entry.role + " at " + entry.station.name);
       }
+      */
     }
   }
 };
