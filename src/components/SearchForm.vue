@@ -27,7 +27,6 @@ import stationInput from "../components/StationInput";
 import dateInput from "../components/DateInput";
 import timeInput from "../components/TimeInput";
 import { mapState } from "vuex";
-import util from "util";
 
 export default {
   name: "search-form",
@@ -37,8 +36,7 @@ export default {
     timeInput
   },
   data() {
-    return {
-    };
+    return {};
   },
   computed: {
     complete: function() {
@@ -67,10 +65,9 @@ export default {
       set(stationId) {
         this.$store.commit("setDestinationStation", stationId);
       }
-    },
+    }
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 <style>

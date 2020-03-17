@@ -9,12 +9,12 @@
           <p class="font-weight-medium">Ganz kurz gesagt: Dystonse ist eine A*-Routensuche mit Wahrscheinlicheitsverteilungen als Kostenfunktion. Aber was heißt das, und warum ist das gut?</p>
 
           <h2>Dystonse jetzt vs. Dystonse in Zukunft</h2>
-            <p>
-          Zwar haben wir hier schon einen lauffähigen Prototypen, aber er funktioniert nicht in jeder Hinsicht so, wie Dystonse das später einmal tun soll. Wir müssen also zwischen Ist- und Soll-Zustand unterscheiden. Natürlich gibt es auch Gemeinsamkeiten.</p>
+          <p>
+            Zwar haben wir hier schon einen lauffähigen Prototypen, aber er funktioniert nicht in jeder Hinsicht so, wie Dystonse das später einmal tun soll. Wir müssen also zwischen Ist- und Soll-Zustand unterscheiden. Natürlich gibt es auch Gemeinsamkeiten.</p>
 
           <h2>Grundlagen der Routensuche</h2>
           <p>Die meisten heute eingesetzten Routensuchen basieren auf dem A*-Algorithmus von 1968, der wiederum auf dem Dijkstra-Algorithmus von 1959 aufbaut. Auch Dystonse ist im Kern ein A*-Algorithmus.</p>
-          
+
           <p>Um zu verstehen, wie Dystonse funktioniert, und was daran neuartig ist, ist also ein grundlegendes Verständnis von A* nötig. Für alle, die therorethisch früher schon mal mal wussten, wie A* funktioniert, geben wir im Folgenden eine kurze Auffrischung. </p>
 
           <v-alert color="warning" dark icon="ondemand_video" border="left" prominent>
@@ -30,7 +30,7 @@
           <h3>Absolute Zeiten, dynamische Kosten</h3>
           <p>Während viele Beschreibungen von A* als Kostenfunktion relative Zeiten annehmen ("bis zum Knoten D braucht man auf dem kürzesten Weg 17 Minuten") rechnet Dystonse, wie auch viele andere praktische Anwendungen, mit absoluten Zeitpunkten ("am Knoten D kommt man auf dem kürzesten Weg um 12:17 Uhr an"). Das ändert zunächst gar nichts daran, wie der Algorithmus funktioniert. Aber es ist die Vorbedingung für die nächste Erweiterung:</p>
 
-          <p>Im klassischen A* sind die Fahrzeiten zwischen zwei Knoten, also die sogenannten Kantengewichte, konstant. Eine Fahrt vom Knoten D zum benachtbarten Knoten E dauert z.B. steta 7 Minuten. In einem idealen getakteten / Fahrplanbasierten Verkehrsnetz  ohne Verspätungen mag zwar die reine Fahrzeit immer gleich sein, aber zu den Kosten gehört auch die Wartezeit bis zur Abfahrt. Die Gesamtkosten für eine Kante hängen also von der Ankunftszeit ab, man sagt: sie sind dynamisch. Daher das "Dy" am Anfang von "Dystonse".</p>
+          <p>Im klassischen A* sind die Fahrzeiten zwischen zwei Knoten, also die sogenannten Kantengewichte, konstant. Eine Fahrt vom Knoten D zum benachtbarten Knoten E dauert z.B. steta 7 Minuten. In einem idealen getakteten / Fahrplanbasierten Verkehrsnetz ohne Verspätungen mag zwar die reine Fahrzeit immer gleich sein, aber zu den Kosten gehört auch die Wartezeit bis zur Abfahrt. Die Gesamtkosten für eine Kante hängen also von der Ankunftszeit ab, man sagt: sie sind dynamisch. Daher das "Dy" am Anfang von "Dystonse".</p>
 
           <p>Dynamamische Kantengewichte sind also nichts neues, sondern etablierter Teil jeder Routensuche im ÖPNV. Früher basierte diese "Dynamik" nur auf dem Fahrplan, der sich ja nur selten ändert. Neuere Systeme beziehen auch Echtzeitdaten zur Verspätung mit ein, sozusagen eine "dynamischere Dynamik". Dabei gibt es verschiedene Ansätze:</p>
 

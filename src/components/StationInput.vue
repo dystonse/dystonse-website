@@ -1,20 +1,12 @@
 <template>
-  <v-autocomplete 
-    :value="value.id"
-    :items="items"
-    item-text="name"
-    item-value="id"
-    :placeholder="placeholder"
-    @input="handleSelection"
-    @update:search-input="handleInput"
-     hide-details solo background-color="#FFFFFF66">
-     <template v-slot:no-data>
-        <v-list-item>
-          <v-list-item-title>
-            Tippe einen Statiosnamen
-          </v-list-item-title>
-        </v-list-item>
-      </template>
+  <v-autocomplete :value="value.id" :items="items" item-text="name" item-value="id" :placeholder="placeholder" @input="handleSelection" @update:search-input="handleInput" hide-details solo background-color="#FFFFFF66">
+    <template v-slot:no-data>
+      <v-list-item>
+        <v-list-item-title>
+          Tippe einen Statiosnamen
+        </v-list-item-title>
+      </v-list-item>
+    </template>
   </v-autocomplete>
 
 </template>
@@ -28,7 +20,7 @@ export default {
   name: "station-input",
   data() {
     return {
-      loadedItems: [],
+      loadedItems: []
     };
   },
   props: ["value", "placeholder"],
@@ -44,10 +36,10 @@ export default {
 
       var defaultItem = {
         id: this.value.id,
-        name: this.value.name,
-      }
+        name: this.value.name
+      };
       return this.loadedItems.concat([defaultItem]);
-    },
+    }
   },
   methods: {
     handleInput: async function(val) {

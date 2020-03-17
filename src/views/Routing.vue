@@ -47,7 +47,13 @@ function addStations(map) {
       // make circles larger as the user zooms from z12 to z22
       "circle-radius": {
         base: 1.75,
-        stops: [[6, 0], [8, 2], [11, 3], [13, 5], [15, 16]]
+        stops: [
+          [6, 0],
+          [8, 2],
+          [11, 3],
+          [13, 5],
+          [15, 16]
+        ]
       },
       // color circles by ethnicity, using a match expression
       // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
@@ -71,7 +77,13 @@ function addStations(map) {
 
       "circle-stroke-width": {
         base: 1,
-        stops: [[6, 0], [9, 4], [12, 8], [15, 12], [17, 25]]
+        stops: [
+          [6, 0],
+          [9, 4],
+          [12, 8],
+          [15, 12],
+          [17, 25]
+        ]
       },
       "circle-stroke-color": "transparent"
     },
@@ -88,11 +100,16 @@ function addStations(map) {
       "text-field": ["get", "name"],
       "text-size": {
         base: 1,
-        stops: [[10, 0], [12, 10], [15, 18], [17, 22]]
+        stops: [
+          [10, 0],
+          [12, 10],
+          [15, 18],
+          [17, 22]
+        ]
       },
       "text-anchor": "bottom",
       "text-justify": "center",
-      "text-offset": [0, -1],
+      "text-offset": [0, -1]
     },
     paint: {
       "text-halo-color": "#FFF",
@@ -132,9 +149,9 @@ function addRoutingLayer(map) {
     type: "background",
     paint: {
       "background-color": "#FFFFFF",
-      "background-opacity": 0.5,
+      "background-opacity": 0.5
     }
-  }
+  };
 
   var geoJsonRoutingLineLayer = {
     id: "routingLines",
@@ -146,7 +163,12 @@ function addRoutingLayer(map) {
     paint: {
       "line-width": {
         base: 1,
-        stops: [[8, 0], [10, 4], [12, 7], [17, 20]]
+        stops: [
+          [8, 0],
+          [10, 4],
+          [12, 7],
+          [17, 20]
+        ]
       },
       "line-color": [
         "match",
@@ -155,7 +177,7 @@ function addRoutingLayer(map) {
         "#5555DD",
         "#000000" // other
       ],
-      "line-opacity": 0.5,
+      "line-opacity": 0.5
     },
     source: "routingMapSource"
   };
@@ -166,11 +188,23 @@ function addRoutingLayer(map) {
     paint: {
       "circle-radius": {
         base: 1.75,
-        stops: [[6, 0], [8, 4], [11, 5], [13, 7], [15, 18]],
+        stops: [
+          [6, 0],
+          [8, 4],
+          [11, 5],
+          [13, 7],
+          [15, 18]
+        ]
       },
       "circle-stroke-width": {
         base: 1,
-        stops: [[6, 0], [9, 2], [12, 3], [15, 5], [17, 7]],
+        stops: [
+          [6, 0],
+          [9, 2],
+          [12, 3],
+          [15, 5],
+          [17, 7]
+        ]
       },
       "circle-color": "transparent",
       "circle-stroke-color": [
@@ -210,7 +244,7 @@ function addRoutingLayer(map) {
         "through",
         1,
         /* other */ 0
-      ],
+      ]
     },
     source: "routingMapSource"
   };
@@ -235,7 +269,12 @@ function addLines(map, name) {
       "line-color": name === "suburban" ? "#000000" : "#FFFFFF",
       "line-width": {
         base: 1,
-        stops: [[8, 0], [10, 2], [12, 5], [17, 18]]
+        stops: [
+          [8, 0],
+          [10, 2],
+          [12, 5],
+          [17, 18]
+        ]
       }
     },
     source: {
@@ -247,7 +286,12 @@ function addLines(map, name) {
   var geoJsonLayer = JSON.parse(JSON.stringify(geoJsonOutlineLayer));
   geoJsonLayer.paint["line-color"] = ["get", "bgColor"];
 
-  geoJsonLayer.paint["line-width"].stops = [[8, 0], [10, 1], [12, 3], [17, 10]];
+  geoJsonLayer.paint["line-width"].stops = [
+    [8, 0],
+    [10, 1],
+    [12, 3],
+    [17, 10]
+  ];
   geoJsonLayer.id = name + "-lines";
 
   map.addLayer(geoJsonOutlineLayer);
@@ -259,7 +303,7 @@ export default {
     MglMap,
     MglNavigationControl,
     MglMarker,
-    StationPopup,
+    StationPopup
   },
   data() {
     return {
@@ -276,7 +320,7 @@ export default {
       photoUrl: null,
       station: {},
       snackbarText: "",
-      snackbar: false,
+      snackbar: false
     };
   },
   // We use computed data as a workaround to watch for changes in nested state
@@ -425,7 +469,7 @@ export default {
       for (var entry of this.$store.state.currentSearch.stationRoles) {
         console.log(entry.role + " at " + entry.station.name);
       }
-    },
+    }
   }
 };
 </script>

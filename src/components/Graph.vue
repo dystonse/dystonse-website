@@ -2,7 +2,7 @@
   <v-sheet height="400px" class="d-flex align-center">
     <v-chart v-if="ready" :options="graphoptions" autoresize theme="ovilia-green" />
     <v-alert v-if="!ready" color="warning" dark icon="show_chart" border="left" prominent class="flex-grow-1">
-        Der Graph wird erst angezeigt, nachdem eine Suche abgeschlossen wurde.
+      Der Graph wird erst angezeigt, nachdem eine Suche abgeschlossen wurde.
     </v-alert>
   </v-sheet>
 </template>
@@ -14,8 +14,6 @@ import "echarts/lib/component/axisPointer";
 import "echarts/lib/component/legend";
 import "echarts/lib/component/dataZoom";
 
-import util from "util";
-
 export default {
   name: "graph",
   components: {
@@ -26,7 +24,10 @@ export default {
   },
   computed: {
     ready: function() {
-      return this.$store.state.currentSearch.fullGraph && this.$store.state.currentSearch.fullGraph.length > 1;
+      return (
+        this.$store.state.currentSearch.fullGraph &&
+        this.$store.state.currentSearch.fullGraph.length > 1
+      );
     },
     graphoptions: function() {
       var theSource = this.$store.state.currentSearch.fullGraph;
@@ -52,15 +53,15 @@ export default {
         };
         if (i > 0) {
           dimensions.push("Spalte" + i);
-        series.push(next);
-      }
+          series.push(next);
+        }
       }
 
       return {
         title: {
           text: "Wahrscheinlichkeiten",
           subtext: "Dummy-Daten",
-          show: false,
+          show: false
         },
 
         legend: {},
@@ -88,7 +89,7 @@ export default {
             end: 100
           }
         ],
-        series: series,
+        series: series
       };
     }
   }
