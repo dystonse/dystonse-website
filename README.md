@@ -1,4 +1,4 @@
-# dystonse-website
+# awesome-website
 
 **This repository is a part of the multi-repository project `dystonse`. See the [main repository](https://github.com/dystonse/dystonse) for more information.**
 
@@ -8,7 +8,7 @@
 
 This is a web frontend for [dystonse-search-node](https://github.com/dystonse/dystonse-search-node), and later on for [dystonse-search-rust](https://github.com/dystonse/dystonse-search-rust). It also contains some static information about the project and its status.
 
-## Try it!
+## Try and use it 
 **The prototype of the Dystonse website is available at [dystonse.org](https://dystonse.org) - there you can test the algorithm and read about the background of this project.**
 
 You can also follow [@dystonse](https://twitter.com/dystonse) on Twitter.
@@ -22,6 +22,6 @@ This site uses (among other packages):
 * several vbb-modules
 * socket.io
 
-## Deployment
+## enhencement
  * `npm run build`
  * Upload (currently not automated. We use e.g. FileZilla to upload the new version)
