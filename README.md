@@ -1,5 +1,11 @@
 # dystonse-website
 
+**This repository contains code for a deprecated part of the project and is no longer maintained or updated. Whatever you may be looking for here - proceed with care, it's probably very outdated!**
+
+If you're looking for a website with info about the dystonse project, you might want to look at [our blog](http://blog.dystonse.org/) instead.
+
+---
+
 **This repository is a part of the multi-repository project `dystonse`. See the [main repository](https://github.com/dystonse/dystonse) for more information.**
 
 <p align="center">
